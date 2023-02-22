@@ -40,43 +40,52 @@
             position: absolute;
             top: 300px;
             left: 280px; 
+            animation: flipInX 5s;
         }
+    
         .chocolate
         {
            
             border-radius: 75px;
             position: absolute;
-            top: -30px;
-            left: 4px; 
+            top: 0px;
+            left: 0px; 
+            animation:chocolate01 5s infinite linear;
+        }
+        @keyframes chocolate01
+        {
+            100%{left:0px;top:30px}
+
+            0%{left:0px;top:0px}
+
+
         }
         .chocolate2
         {
            
             border-radius: 75px;
             position: absolute;
-            top: -30px;
-            left: 800px; 
-        }
-        .chocolate3
+            top: 10px;
+            left: 798px;
+            animation:chocolate02 5s infinite linear;
+            
+
+    
+        } 
+        @keyframes chocolate02
         {
-           
-            border-radius: 75px;
-            position: absolute;
-            top: -30px;
-            left: 789px; 
+            100%{left:798px;top:30px}
+
+            0%{top:0px}
+
+
         }
-        .chocolate4
-        {
-           
-            border-radius: 75px;
-            position: absolute;
-            top: -19px;
-            left: 3px; 
-        }
+          
+        
         .abelinha
         {
            position: absolute;
-            top: 490px;
+            top: 520px;
             left: 0px; 
             animation:abelinha2 7s infinite linear;
             
@@ -84,11 +93,30 @@
         }
         @keyframes abelinha2
         {
-            0%{left:0px;top:490px}
+            0%{left:0px;top:520px}
 
-            100%{left:1500px;top:490px}
+            100%{left:1500px;top:520px}
 
 
+        }
+        .fundomarrom
+        {
+            position: absolute;
+            top: 00px;
+            left: 0px; 
+        }
+        .fundomarrom2
+        {
+            position: absolute;
+            top: 00px;
+            left: 800px; 
+        }
+        .loading
+        {
+            position: absolute;
+            top: 520px;
+            left: 720px; 
+            
         }
         
     </style>
@@ -102,10 +130,17 @@
         <img class="logo" src="cupcake.png"  width="1000px" > 
     <img class="chocolate" src="cobertura de chocolate.png"  width="800px" >
     <img class="chocolate2" src="cobertura de chocolate.png"  width="800px" >  
-    <img class="chocolate3" src="fotomarrom.png"  width="100px" > 
-    <img class="chocolate4" src="fotomarrom.png"  width="100px" >  
-    <img class="abelinha" src="abelinha2.gif"  width="200px" >  
+    <img class="abelinha" src="abelinha2.gif"  width="200px" >
+    <img class="fundomarrom" src="fundomarrom.png"  width="1000px" >
+    <img class="fundomarrom2" src="fundomarrom.png"  width="1000px" >
 
+    <div class="loading">
+        LOADING ...
+    </div>
+
+    
+    
+    
 
     </div>
 
