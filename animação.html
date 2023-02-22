@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANIMAÇÃO</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
 
         body
@@ -40,7 +42,8 @@
             position: absolute;
             top: 300px;
             left: 280px; 
-            animation: flipInX 5s;
+            animation: zoomIn 1s;
+            width:1000px;
         }
     
         .chocolate
@@ -50,7 +53,7 @@
             position: absolute;
             top: 0px;
             left: 0px; 
-            animation:chocolate01 5s infinite linear;
+            animation:chocolate01 7s infinite linear;
         }
         @keyframes chocolate01
         {
@@ -67,7 +70,7 @@
             position: absolute;
             top: 10px;
             left: 798px;
-            animation:chocolate02 5s infinite linear;
+            animation:chocolate02 7s infinite linear;
             
 
     
@@ -117,7 +120,18 @@
             top: 520px;
             left: 720px; 
             
+            
         }
+        .pontinhos
+        {
+            position: absolute;
+            top: 512px;
+            left: 798px; 
+            animation:flash 5s;
+           font-size: 25px;
+        }
+        
+           
         
     </style>
 </head>
@@ -127,16 +141,22 @@
 
         </div>
 
-        <img class="logo" src="cupcake.png"  width="1000px" > 
+        <img class="logo" src="cupcake.png"   > 
     <img class="chocolate" src="cobertura de chocolate.png"  width="800px" >
     <img class="chocolate2" src="cobertura de chocolate.png"  width="800px" >  
     <img class="abelinha" src="abelinha2.gif"  width="200px" >
     <img class="fundomarrom" src="fundomarrom.png"  width="1000px" >
     <img class="fundomarrom2" src="fundomarrom.png"  width="1000px" >
 
+    
     <div class="loading">
-        LOADING ...
+        LOADING 
     </div>
+    
+    <div class="pontinhos">
+        ... 
+    </div>
+    
 
     
     
