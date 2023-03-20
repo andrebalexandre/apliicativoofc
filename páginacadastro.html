@@ -1,12 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>PAGINACADASTRO</title>
+    <style>
+        body
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            background-image: url("fundo4.jpg");
+            overflow: hidden;
+            font-family: "Audiowide", sans-serif;
+        }
+        .d1
+        {
+           
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center;  
+        }
+        .cadastro
+        {
+
+            width: 30%;
+            height: 97vh;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center; 
+        }
+        .bordacad
+        {
+            width: 80%;
+            height: 45vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
+        }
+        .letrascadastro
+        {
+            font-size: 40px;
+        }
+
+        .dPessoais
+        {
+            background: rgba(239, 244, 246, 0.7);
+            width: 30%;
+            height: 97vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
+            border-radius: 40px;
+        }
+        .letraspessoais
+        {
+            font-size: 25px;
+            color: rgb(53, 120, 141);
+        }
+
+        .dProfissionais
+        {
+            background: rgba(239, 244, 246, 0.7);
+            width: 30%;
+            height: 97vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
+            border-radius: 40px;
+        }
+        .logo
+        {
+            top: 40px;
+        }
+        .fieldset1
+        {
+            width: 250px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
+            border-radius: 20px;
+            flex-direction: column;
+            border-style: solid;
+            border-color: black;
+             
+        }
+        .fieldset2
+        {
+            width: 80%;
+            height: 90px;
+            display: flex;
+            justify-content:center;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
+            border-radius: 20px;  
+        }
+        .fieldset3
+        {
+            width: 80%;
+            height: 60px;
+            display: flex;
+            justify-content:center;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
+            border-radius: 5px;
+             
+        }
+        .botao
+        {
+           width: 180px;
+           height: 60px;
+           background-color: rgb(53, 120, 141);
+           display: flex;
+           border-radius: 20px;
+           justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
+            color: white;
+            font-weight: bold;
+            z-index: 1;
+            font-weight: bold;
+        }
+        input
+        {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+    
 </head>
 <body>
-    
+    <div class="d1">
+      <div class="cadastro">
+        <img class="logo" src="novalogo.png"  width="170px" >
+        <br> <br> 
+        <b class="letrascadastro">FAÇA SEU LOGIN:</b>
+        <br> <br>
+        <div class="bordacad">
+            <fieldset class="fieldset1">
+                 <legend><b>LOGIN</b> </legend>
+                 <input type="text">
+            </fieldset>
+            <fieldset class="fieldset1">
+                <legend> <b>SENHA</b></legend>
+                <input type="text">
+            </fieldset>
+        </div>
+        <div class="botao">
+            <a href="páginainicial.html">
+                <b>ENTRAR</b>
+                </a> 
+           
+        </div>
+    </div>
+      <div class="dPessoais">
+        <b class="letraspessoais"> DADOS PESSOAIS:</b>
+        <fieldset class="fieldset2">
+            <legend><b> NOME </b> </legend>
+            <input type="text">
+       </fieldset>
+       <fieldset class="fieldset2">
+           <legend> <b>CPF</b></legend>
+           <input type="text">
+        </fieldset>
+        <fieldset class="fieldset2">
+           <legend><b>TELEFONE</b> </legend>
+            <input type="text">
+       </fieldset>
+       <fieldset class="fieldset2">
+           <legend> <b>DATA DE NASCIMENTO</b></legend>
+           <input type="date">
+       </fieldset>
+      </div>
+
+      <div class="dProfissionais">
+        <b class="letraspessoais"> DADOS DO ENDEREÇO:</b>
+        <fieldset class="fieldset3">
+            <legend><b> CEP </b> </legend>
+            <input type="text">
+       </fieldset>
+       <fieldset class="fieldset3">
+           <legend> <b>ESTADO</b></legend>
+           <input type="text">
+        </fieldset>
+        <fieldset class="fieldset3">
+           <legend><b>CIDADE</b> </legend>
+            <input type="text">
+       </fieldset>
+       <fieldset class="fieldset3">
+           <legend> <b>BAIRRO/LOUGRADORO</b></legend>
+           <input type="text">
+       </fieldset>
+       <fieldset class="fieldset3">
+        <legend> <b>NÚMERO</b></legend>
+        <input type="number">
+    </fieldset>
+    <fieldset class="fieldset3">
+        <legend> <b>COMPLEMENTO</b></legend>
+        <input type="text">
+    </fieldset>
+      </div>
+    </div>
 </body>
 </html>
