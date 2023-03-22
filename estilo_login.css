@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGINALOGIN</title>
-    <style>
-    
-    .principal
+.principal
         {
         
             border-style: solid;
@@ -116,51 +106,3 @@
         color: white;
 
        }
-        
-
-    </style>
-</head>
-<body>
-    <div  class="principal">
-
-        <div class="letraslogin"
-    h1>FAÇA SEU LOGIN:</h1>
-    </div>
-
-    <div class="botao">
-        <a href="paginacadastro.html">
-        Cadrastre-se
-    </a>
-         
-     </div>
-
-     <div class="login3">
-        Login:
-         
-     </div>
-     <div class="senha">
-        Senha:
-         
-     </div>
-
-    </div>
-    
-
-
-</div>
-
-
-
-
-
-    
-    <img class="logo" src="cupcake.png"  width="1000px" > 
-    <img class="login" src="caixatexto.png"  width="500px" > 
-    <img class="login2" src="caixatexto.png"  width="500px" > 
-    <img class="cadastrar" src="cadastrar.png"  width="500px" > 
-
-
-
-    
-</body>
-</html>
