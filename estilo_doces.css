@@ -269,11 +269,11 @@ body
 }
 .logoescrita
 {
+    font-family: 'Pinyon Script', cursive;font-size: 98px;
+    width:1500px;
+    height: 500px;
+    top: 100px
     
-    position: absolute;
-    top: 70px;
-    left:650px; 
-    width: 700px;
 
 }
 /* {
