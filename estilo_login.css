@@ -1,108 +1,78 @@
-.principal
-        {
-        
-            border-style: solid;
-            /*border-color: brown;*/
-            border-width: 5px;
-            width: 99%;
-            height: 99px;
-        }
-
-        body
-        {
-            
-            font-family: "Trirong", serif;
-            background-image: url("fundo4.jpg");
-            overflow: hidden;
-            margin: 0;
-            padding: 0%;
-            width: 99%;
-            height: 99px;
-
-           
-            
-           
-
-        }
-        .letraslogin
-        {
-            position: absolute;
-            top: 310px;
-            left: 580px;
-            font-size: 45px;
-            font-weight: bold
-           
-
-            
-
-
-        }
-        .logo
-        {
-            border-radius: 75px;
-            position: absolute;
-            top: 90px;
-            left: 280px; 
-        }
-        .login
-        {
-            position: absolute;
-            top: 400px;
-            left: 500px; 
-            
-        
-        }
-        .login2
-        {
-            position: absolute;
-            top: 300px;
-            left: 500px; 
-            
-        }
-        .cadastrar
-        {
-            position: absolute;
-            top: 505px;
-            left: 500px;  
-            z-index: 0; 
-            font-weight: bold
-           
-            
-        }
-        .botao
-        {
-            position: absolute;
-            top: 635px;
-            left: 685px;
-            font-size: 25px;
-            font-weight: bold;
-            z-index: 1;
-            color:white
-            
-
-
-        }
-        .login3
-       {
-        position: absolute;
-            top: 410px;
-            left: 540px;  
-            font-size: 25px;
-            font-weight: bold
-           
-       }
-       .senha
-       {
-        position: absolute;
-            top: 520px;
-            left: 540px;  
-            font-weight: bold;
-            font-size: 25px;
-           
-       }
-       a
-       {
-        text-decoration: none;
-        color: white;
-
-       }
+body
+{
+    font-family: "Audiowide", sans-serif;
+    background-image: url("fundo4.jpg");
+    overflow: hidden;
+    width: 99%;
+    height: 99vh;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+.D1
+{
+    width: 70%;
+    height: 95vh;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+.D2
+{
+    width: 45%;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.576);
+    border-radius: 40px ;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+   
+}
+.fieldset1
+{
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    border-radius: 20px;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+}
+.D3
+{
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    height: 10vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.botao
+{
+    background-color: rgb(45, 128, 127);
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
