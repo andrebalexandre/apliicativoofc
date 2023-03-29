@@ -293,68 +293,13 @@ body
     height: 500px;
 
 }*/
-.DES
-{
-    height: 100px;
-    width: 700px;
-    display: flex;
-    flex-direction:row;
-    background-color: black;
-    margin-left: 430px;
-    cursor:pointer
-}
 
-   
-
-
-.DES1
-{
-    width: 180px;
-   height: 60px;
-   background-color: rgb(38, 101, 103);
-   display: flex;
-   border-radius: 20px;
-   justify-content: space-around;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-    flex-direction: column;
-    margin-left: 0px;
-    cursor: pointer;
-    margin-top: 20px;
-
-}
-.DES2
-{
-    width: 180px;
-   height: 60px;
-   background-color:rgb(38, 101, 103);
-   display: flex;
-   border-radius: 20px;
-   justify-content: space-around;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-    margin-left: 370px;
-    cursor: pointer;
-    margin-top: 20px;
-
-}
 a
 {
     text-decoration: none;
     color:white;
 }
-.DES1:hover
-{
-    background-color: black;
 
-}
-.DES2:hover
-{
-    background-color: black;
-
-}
 .propaganda
 {
     height: 400px;
@@ -363,6 +308,7 @@ a
     flex-direction:row;
     /*background-color: white;*/
     margin-left: 0px;
+    margin-top: 120px;
     
 
 }
@@ -403,41 +349,31 @@ a
 }
 .linha2
 {
-    height: 300px;
-    width: 30%;
+    height: 500px;
+    width: 50%;
     display: flex;
     flex-direction:row;
-    /*background-color: yellow;*/
+    background-color: yellow;
     margin-left: 40px;
     justify-items: center;
     align-content: center;
     align-items: center; 
+    margin-top:-100px ;
 }
-.infocoxinha
-{
-    height: 300px;
-    width: 350px;
-    display: flex;
-    flex-direction:column;
-    /*background-color: red;*/
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-}
+
 .precocoxinha
 {
-    width: 180px;
-    height: 40px;
-    background-color: rgb(38, 101, 103);
+    width: 335px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.562);
     display: flex;
-    border-radius: 20px;
+    margin-top: 320px;
     justify-content: space-around;
      justify-items: center;
      align-content: center;
      align-items: center; 
      flex-direction: column;
-     margin-left: 0px;
+     margin-left: -375px;
      color:white
 }.linha3
 {
@@ -445,39 +381,26 @@ a
     width: 40%;
     display: flex;
     flex-direction:row;
-    /*background-color: yellow;/*/
+    background-color:RED;
     margin-left: 70px;
     justify-items: center;
     align-content: center;
     align-items: center; 
 }
-.infotorta
-{
-    height: 300px;
-    width: 400px;
-    display: flex;
-    flex-direction:column;
-    /*background-color: red;*/
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-    margin-left: -70px;
-    top:50px;
-}
+
 .precotorta
 {
-    width: 180px;
-    height: 40px;
-    background-color: rgb(38, 101, 103);
+    width: 268px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.562);
     display: flex;
-    border-radius: 20px;
+    margin-top: 210px;
     justify-content: space-around;
      justify-items: center;
      align-content: center;
      align-items: center; 
      flex-direction: column;
-     margin-left: 0px;
+     margin-left: -268px;
      color:white
 }
 
