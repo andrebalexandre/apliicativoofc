@@ -25,14 +25,7 @@ body
     display: flex;
     flex-direction: column;
 }
-.logo
-{
-    border-radius: 75px;
-    position: absolute;
-    top: 90px;
-    left:-300px; 
-    
-}
+
 .D1
 {
     width: 100%;
@@ -194,6 +187,7 @@ body
     background-color: rgb(44, 119, 119);
     position: fixed;
     top:250px;
+    z-index: 0;
    
     
 }
@@ -274,6 +268,7 @@ body
     top: 70px;
     left:650px; 
     width: 700px;
+    z-index: 10;
 
 }
 /* {
@@ -437,4 +432,12 @@ a
     top: 100px
     
 
+}
+.logo
+{
+ width: 250px;
+ z-index: 11;
+ position:absolute;
+ top:80px;
+ left:50px;
 }
