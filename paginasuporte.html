@@ -58,11 +58,28 @@
   }
 
   // Função executada quando a variável (tópico) no servidor receber uma mensagem:
-  function MensagemRecebida(message) {
-      resposta.innerHTML += "<br><br>" + message.payloadString;
-      
+  function MensagemRecebida(message)
+   {
+    texto= message.payloadString; 
+    expressao1=/https:\/\/github.com\/Kauahe\/site\/blob\/master\/area_pix.html/g;
+    teste1=expressao1.test(texto)
+   
+    if (teste1==true)
+    {
+        texto2 = texto
+        texto2 = texto2.replace("https:\/\/github.com\/Kauahe\/site\/blob\/master\/area_pix.html","")
+        expressao2=/http/g;
+        teste2=expressao2.test(texto2)
+        if (teste2==false)
+        {
+            resposta.innerHTML += "<br><br>" + texto
+        }
+        else{
+            resposta.innerHTML += "<br><br>Código malicioso"
+        }
+    }
+  
   }
-
   function Enviar()
   {
     texto = mensagem.value;
