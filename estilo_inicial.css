@@ -483,6 +483,7 @@ a
     color: white;
     font-size: 15PX;
     animation: mostrar_op1 2s forwards;
+    cursor: pointer;
 }
 .op2
 {
@@ -502,6 +503,7 @@ a
     color: white;
     font-size: 15PX;
     animation: mostrar_op2 2s forwards;
+    cursor: pointer;
 }
 
 @keyframes mostrar_op2
@@ -513,6 +515,16 @@ a
 {
     0%{top:505px;left:35px}
     100%{top:450px; left:125px;width: 140px ;}
+}
+.op1:hover
+{
+    background-color: black;
+
+}
+.op2:hover
+{
+    background-color: black;
+
 }
 
 
