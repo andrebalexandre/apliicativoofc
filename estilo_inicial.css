@@ -305,9 +305,10 @@ a
     margin-left: 0px;
     margin-top: 120px;
     
+    
 
 }
-.linha1
+.linha2
 {
     height: 350px;
     width: 25%;
@@ -320,13 +321,21 @@ a
     align-content: center;
     align-items: center; 
     font-size: 25px;
+    margin-top: -30px;
+   
+    
+
+  
 }
 .fora
 {
     font-family: 'Cookie';font-size: 22px;
     width: 10px;
     height: 10px;
+    
 }
+  
+
 .emoji
 {
     width: 300px;
@@ -339,57 +348,71 @@ a
     align-content: center;
     align-items: center; 
     flex-direction: row;
+ 
 
     
 
 }
+.todas
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    animation: deslizar 15s infinite;
+}
+@keyframes deslizar {
+    0%{ margin-left: 0px;}
+    100%{ margin-left: -1330px;}
+    
+}
 .img_legenda
 {
     position: relative;
-    /*background-color: aqua;*/
+   
     width: 400px;
     height: 420px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     justify-items: center;
     align-items: center;
     align-content: center;
     border-radius: 20px;
+    margin-left: 50px;
 }
-.linha2
+.carrossel
 {
     height: 500px;
-    width: 70%;
+    width: 55%;
     display: flex;
     flex-direction:row;
     /*background-color: yellow;*/
-    margin-left: 40px;
+    margin-left: 10px;
     justify-items: center;
     align-content: center;
     align-items: center; 
     margin-top:-100px ;
-    justify-content: space-around;
+    margin-left: 300px;
+    overflow: hidden;
+
 }
 
-.precocoxinha
+.preco
 {
     width: 355px;
     height: 70px;
     background-color: rgba(0, 0, 0, 0.562);
     display: flex;
-    margin-top: 320px;
     justify-content: space-around;
-     justify-items: center;
+     justify-items: flex-end;
      align-content: center;
      align-items: center; 
      flex-direction: column;
-     margin-left: -375px;
      color:white;
-     position: absolute;
-     z-index: 10;
-     top:30px;
-     left:390px;
+    
+     
+   position: absolute;
+   bottom: 0px;
 
 }
 /*}.linha3
@@ -405,24 +428,6 @@ a
     align-items: center; 
     margin-top: -80px ;
 }*/
-
-.precotorta
-{
-    width: 348px;
-    height: 70px;
-    background-color: rgba(0, 0, 0, 0.562);
-    display: flex;
-   justify-content: space-around;
-     justify-items: center;
-     align-content: center;
-     align-items: center; 
-     flex-direction: column;
-     color:white;
-     position: absolute;
-     z-index: 10;
-     top:340px;
-     left:26px;
-}
 
 .logoescrita
 {
@@ -441,3 +446,74 @@ a
  top:80px;
  left:50px;
 }
+.central
+{
+    cursor: pointer;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 45px;
+    background-color: rgb(47, 112, 112);
+    top:505px;
+    left:25px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 10;
+}
+.op1
+{
+    position: absolute;
+    width: 50px; /*140*/
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(47, 112, 112);
+    top:505px;/*450*/
+    left: 35px;/*125*/
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 0;
+    color: white;
+    font-size: 15PX;
+    animation: mostrar_op1 2s forwards;
+}
+.op2
+{
+    position: absolute;
+    width: 50px; /*140*/
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(47, 112, 112);
+    top:505px;/*570*/
+    left:35px; /* 1280*/
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-size: 15PX;
+    animation: mostrar_op2 2s forwards;
+}
+
+@keyframes mostrar_op2
+{
+    0%{top:505px;left:35px}
+    100%{top:590px; left:120px;width: 140px ;}
+}
+@keyframes mostrar_op1
+{
+    0%{top:505px;left:35px}
+    100%{top:450px; left:125px;width: 140px ;}
+}
+
+
+
