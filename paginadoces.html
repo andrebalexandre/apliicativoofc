@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina doces</title>
+    <link rel="stylesheet" href="estilo_doces.css">
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
-    <link rel="stylesheet" href="estilo_inicial.css">
     <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Pinyon+Script&display=swap" rel="stylesheet">
-</head>
+    
 <body>
     <div class="principal">
         <div class="D1">
@@ -59,35 +59,124 @@
                      
                     <div class="D11"></div>
                     <div class="D12"></div>
+                    
 
                  </div>
-                 
-
-
-                 
-                 
                  <div class="logoescrita">
-                    <b>  The inclusive bakery </b>
-                 </div>
+                    The Inclusive Bakery 
+                </div>
+                 
+
+                 
+                 
+                 
             </div>  
             
   
         </div>
         <img class="logo" src="cupcake.png"   > 
-        <div class="coxinha">
-            
-
-        </div>
-        <img class="imagemcoxinha" src="fotocoxinha" width="50px">
-
-        <div class="Escritasino">
-            <img class="">
-        </div>
-
         
+        
+
+        <div class="propaganda">
+                <div onclick="executa();" class="botaodeslizar">
+                avançar
+            </div>
+            <div class="carrossel" id="carrossel">
+                <div class="todas">
+                    <div id="bolo_chocolate" class="img_legenda">
+                        <img onclick="adicionar('bolo_chocolate');" src="bolo de chocolate 2.jpg" width="250px" height="320px" >
+                        <div class="preco">
+                            <b>BOLO DE CHOCOLATE</b>
+                            <b>R$13,00</b>
+                        </div>
+                    </div>
+
+                    <div class="img_legenda" id="sonho recheado">
+                        <img onclick="adicionar('sonho recheado');" src="sonho recheado02.jpg" width="250px" height="320px" >
+                        <div class="preco">
+                            <b>SONHO RECHEADO</b>
+                            <b>R$5,00</b>
+                        </div>
+                    </div> 
+
+                    <div class="img_legenda" id="chocolate quente">
+                        <img onclick="adicionar('chocolate quente');" src="chocolate quente02.jpg" width="250px" height="320px" >
+                        <div class="preco">
+                            <b>CHOCOLATE QUENTE</b>
+                            <b>R$9,00</b>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="img_legenda" id="cookie">
+                        <img onclick="adicionar('cookie');" src="cookie002.jpg" width="250px" height="320px"  >
+                        <div class="preco">
+                            <b>COOKIE</b>
+                            <b>R$ 4,00</b>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="img_legenda" id="torta de morango">
+                        <img onclick="adicionar('torta de morango');" src="tortademorango.jpg"width="250px" height="320px" >
+                        <div class="preco">
+                            <b>TORTA DE MORANGO</b>
+                            <b>R$15,00</b>
+                        </div>
+                    </div> 
+
+
+                    <div class="img_legenda" id="brownie">
+                        <img onclick="adicionar('brownie');"src="brownie.jpg"width="250px" height="320px" >
+                        <div class="preco">
+                            <b>BROWNIE</b>
+                            <b>R$6,00</b>
+                        </div>
+                    </div> 
+
+
+                    <div class="img_legenda" is="torta de framboesa">
+                        <img onclick="adicionar('torta de framboesa');" src="tortamorango.png"width="250px" height="320px" >
+                        <div class="preco">
+                            <b>TORTA DE FRAMBOESA</b>
+                            <b>R$15,00</b>
+                        </div>
+                    </div> 
+
+                </div>
 
         
     </div>
     
 </body>
+<script>
+    function executa()
+    {
+       carrossel.classList.add("teste")
+
+    }
+    function adicionar(produto)
+    {
+        if(document.getElementById(produto).style.borderColor!="green")
+        {
+            document.getElementById(produto).style.borderStyle = "solid"
+            document.getElementById(produto).style.borderColor="green"
+        }
+        else
+        {
+            document.getElementById(produto).style.borderStyle = "none"
+            document.getElementById(produto).style.borderColor="red"
+        }
+        
+
+        
+
+        
+        
+    }
+</script>
 </html>

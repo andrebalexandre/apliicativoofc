@@ -37,7 +37,7 @@ body
     align-items: center;
     align-content: center;
     justify-items: center;
-     border-radius: 9px;
+     border-radius: 20px;
      top:10px;
 }
 .D2
@@ -63,7 +63,7 @@ body
     align-items: center;
     align-content: center;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 60px;
 
 }
 .D4
@@ -80,7 +80,7 @@ body
     align-items: center;
     align-content: center;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 60px;
 }
 .D5
 {
@@ -96,7 +96,7 @@ body
     align-items: center;
     align-content: center;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 60px;
 }
 .D6
 {
@@ -112,13 +112,13 @@ body
     align-items: center;
     align-content: center;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 60px;
 }
 .D7
 {
     /*background-color: purple;*/
     position: absolute;
-    width: 8%;
+    width: 18%;
     height: 8vh;
     left: 900px;
     top:15px;
@@ -129,6 +129,7 @@ body
     align-content: center;
     cursor: pointer;
     color: white;
+    margin-left: 5px;
     
 }
 .D8
@@ -145,16 +146,17 @@ body
     align-items: center;
     align-content: center;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 60px;
     color:white;
+    margin-left: 28px;
 }
 .D9
 {
     /*background-color: yellow;*/
     position: absolute;
-    width: 5%;
-    height: 9vh;
-    left: 1250px;
+    width: 70px;
+    height: 70px;
+    left: 120px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -163,7 +165,9 @@ body
     align-content: center;
     justify-items: center;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 500px;
+    
+    
 }
 .D10
 {
@@ -263,7 +267,8 @@ body
 }
 .logoescrita
 {
-    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
+    font-size: 98px;
     position: absolute;
     top: 70px;
     left:650px; 
@@ -359,6 +364,7 @@ a
     flex-direction: row;
     margin-left: 0px;
     animation: deslizar 15s infinite;
+    
 }
 @keyframes deslizar {
     0%{ margin-left: 0px;}
@@ -368,7 +374,6 @@ a
 .img_legenda
 {
     position: relative;
-   
     width: 400px;
     height: 420px;
     display: flex;
@@ -379,6 +384,7 @@ a
     align-content: center;
     border-radius: 20px;
     margin-left: 50px;
+    
 }
 .carrossel
 {

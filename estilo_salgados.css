@@ -27,11 +27,11 @@ body
 }
 .logo
 {
-    border-radius: 75px;
-    position: absolute;
-    top: 90px;
-    left:-300px; 
-    width: 1000px;
+    width: 250px;
+ z-index: 11;
+ position:absolute;
+ top:80px;
+ left:50px;
 }
 .D1
 {
@@ -123,37 +123,39 @@ body
 }
 .D7
 {
-    /*background-color: purple;*/
-    position: absolute;
-    width: 8%;
-    height: 8vh;
-    left: 900px;
-    top:15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    cursor: pointer;
-    color: white;
+     /*background-color: purple;*/
+     position: absolute;
+     width: 18%;
+     height: 8vh;
+     left: 900px;
+     top:15px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     align-content: center;
+     cursor: pointer;
+     color: white;
+     margin-left: 5px;
     
 }
 .D8
 {
    /* background-color: yellow;*/
-    position: absolute;
-    width: 5%;
-    height: 9vh;
-    left: 1090px;
-    top:9px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    cursor: pointer;
-    border-radius: 40px;
-    color:white;
+   position: absolute;
+   width: 5%;
+   height: 9vh;
+   left: 1090px;
+   top:9px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+   cursor: pointer;
+   border-radius: 60px;
+   color:white;
+   margin-left: 28px;
 }
 .D9
 {
@@ -193,7 +195,7 @@ body
     height: 15px;
     background-color: rgb(44, 119, 119);
     position: fixed;
-    top:250px;
+    top:230px;
    
     
 }
@@ -272,7 +274,11 @@ body
     font-family: 'Pinyon Script', cursive;font-size: 98px;
     width:1500px;
     height: 500px;
-    top: 100px
+    top: 100px;
+    margin-left: 650px;
+    z-index: 13px;
+    margin-top:-130px ;
+    
     
 
 }
@@ -302,3 +308,78 @@ a
     text-decoration: none;
     color:white;
 }
+
+.propaganda
+{
+    /*background-color: red;*/
+    height: 400px;
+    width:2700px;
+    display: flex;
+    flex-direction:row;
+    margin-left: -300px;
+    margin-top: 160px;
+
+}
+
+.todas
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    animation: deslizar 2s;
+    width: 400px;
+}
+
+.img_legenda
+{
+    position: relative;
+   
+    width: 400px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 120px;
+}
+.carrossel
+{
+    height: 500px;
+    width: 55%;
+    display: flex;
+    flex-direction:row;
+    /*background-color: yellow;*/
+    margin-left: 10px;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    margin-top:-100px ;
+    margin-left: 300px;
+    overflow: hidden;
+
+}
+
+.preco
+{
+    width: 250px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.562);
+    display: flex;
+    justify-content: space-around;
+     justify-items: flex-end;
+     align-content: center;
+     align-items: center; 
+     flex-direction: column;
+     color:white;
+    TOP:250PX;
+    
+     
+   position: absolute;
+   bottom: 0px;
+
+}
+
