@@ -30,7 +30,7 @@ body
 {
     width: 100%;
     height: 32vh;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.633);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -53,8 +53,8 @@ body
 {
     /*background-color: brown;*/
     position: absolute;
-    width: 5%;
-    height: 9vh;
+    width: 60px;
+    height: 60px;
     left: 200px;
     top:9px;
     display: flex;
@@ -71,8 +71,8 @@ body
     /*background-color: yellow;*/
     position: absolute;
     width: 5%;
-    height: 9vh;
-    left: 350px;
+    width: 60px;
+    height: 60px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -86,8 +86,8 @@ body
 {
     /*background-color: pink;*/
     position: absolute;
-    width: 5%;
-    height: 9vh;
+    width: 60px;
+    height: 60px;
     left: 500px;
     top:9px;
     display: flex;
@@ -102,8 +102,8 @@ body
 {
     /*background-color: purple;*/
     position: absolute;
-    width: 5%;
-    height: 9vh;
+    width: 60px;
+    height: 60px;
     left: 630px;
     top:9px;
     display: flex;
@@ -118,9 +118,9 @@ body
 {
     /*background-color: purple;*/
     position: absolute;
-    width: 18%;
-    height: 8vh;
-    left: 1100px;
+    width: 150px;
+    height: 60px;
+    left: 1000px;
     top:15px;
     display: flex;
     flex-direction: row;
@@ -136,8 +136,8 @@ body
 {
    /* background-color: yellow;*/
     position: absolute;
-    width: 5%;
-    height: 9vh;
+    width: 60px;
+    height: 60px;
     left: 1250px;
     top:9px;
     display: flex;
@@ -154,16 +154,9 @@ body
 {
     /*background-color: yellow;*/
     position: absolute;
-<<<<<<< HEAD
-    width: 70px;
-    height: 70px;
-    left: 120px;
-=======
-    width: 5%;
-    height: 9vh;
-    left: 1400px;
->>>>>>> 0e5d2dff8c1585402b673eb1b3ce34ba2279b722
-    top:9px;
+    width: 60px;
+    height: 60px;
+    left: 1370px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -274,11 +267,9 @@ body
 .logoescrita
 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
-    font-size: 98px;
     position: absolute;
-    top: 70px;
-    left:800px; 
-    width: 700px;
+    top: 60px;
+    left:400px; 
     z-index: 10;
 
 }
@@ -388,8 +379,8 @@ a
     justify-items: center;
     align-items: center;
     align-content: center;
-    border-radius: 20px;
     margin-left: 50px;
+    background-color: rgba(50, 102, 94, 0.589);
     
 }
 .carrossel
@@ -398,7 +389,7 @@ a
     width: 55%;
     display: flex;
     flex-direction:row;
-    /*background-color: yellow;*/
+    
     margin-left: 10px;
     justify-items: center;
     align-content: center;
@@ -452,10 +443,10 @@ a
 }
 .logo
 {
- width: 250px;
+ width: 200px;
  z-index: 11;
  position:absolute;
- top:80px;
+ top:95px;
  left:50px;
 }
 .central

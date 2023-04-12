@@ -12,33 +12,34 @@
     
 <body>
     <div class="principal">
-        <div class="D1">
+       
             
-            <div class="D2">
+            <div class="D12">
               
                  
-                 <div class="D10">
+                
                     <div class="D3">
                         <a href="paginainicial.html">
-                        <img  title="Ver Página Inicial" src="casinha.png" width="140px" height="70px"> 
+                        <img  title="Ver Página Inicial" src="casinha.png" width="120px" height="60px"> 
                         </a> 
     
                     </div>
-                    <div class="D4">
-                        <a href="Paginalocalização.html">
-                        <img  title="Ver Localização" src="localização.png" width="50px" height="50px"> 
-                        </a> 
-                        
-                     </div>
+                    
                      <div class="D5">
                         <a href="paginahistorico.html">
-                        <img title="Ver Histórico" src="lupa.png" width="50px" height="50px"> 
+                        <img title="Ver Histórico" src="lupa.png" width="35px" height="35px"> 
                         </a> 
                         
                      </div>
                      <div class="D6">
                         <a href="paginaperfil.html">
                         <img  title="Ver Perfil" src="perfil.png" width="70px" height="70px"> 
+                        </a> 
+                        
+                     </div>
+                     <div class="D4">
+                        <a href="Paginalocalização.html">
+                        <img  title="Ver Localização" src="localização.png" width="40px" height="40px"> 
                         </a> 
                         
                      </div>
@@ -58,34 +59,35 @@
                      </div>
                      
                     <div class="D11"></div>
-                    <div class="D12"></div>
+                    
                     
 
-                 </div>
-                 <div class="logoescrita">
-                    The Inclusive Bakery 
-                </div>
+                
+        
                  
 
                  
                  
                  
-            </div>  
+            
             
   
-        </div>
+        
         <img class="logo" src="cupcake.png"   > 
         
         
 
         <div class="propaganda">
                 <div onclick="executa();" class="botaodeslizar">
-                avançar
+               <img src="seta02.png" width="40px">
             </div>
+            <div onclick="executa2();" class="botaodeslizar2">
+                <img src="seta002.png" width="40px">
+             </div>
             <div class="carrossel" id="carrossel">
                 <div class="todas">
                     <div id="bolo_chocolate" class="img_legenda">
-                        <img onclick="adicionar('bolo_chocolate');" src="bolo de chocolate 2.jpg" width="250px" height="320px" >
+                        <img onclick="adicionar('bolo_chocolate');" src="bolodechocolate.png" width="250px" height="320px" >
                         <div class="preco">
                             <b>BOLO DE CHOCOLATE</b>
                             <b>R$13,00</b>
@@ -101,7 +103,7 @@
                     </div> 
 
                     <div class="img_legenda" id="chocolate quente">
-                        <img onclick="adicionar('chocolate quente');" src="chocolate quente02.jpg" width="250px" height="320px" >
+                        <img onclick="adicionar('chocolate quente');" src="Chocolate Quente 002.jpg" width="250px" height="320px" >
                         <div class="preco">
                             <b>CHOCOLATE QUENTE</b>
                             <b>R$9,00</b>
@@ -139,7 +141,7 @@
                     </div> 
 
 
-                    <div class="img_legenda" is="torta de framboesa">
+                    <div class="img_legenda" id="torta de framboesa">
                         <img onclick="adicionar('torta de framboesa');" src="tortamorango.png"width="250px" height="320px" >
                         <div class="preco">
                             <b>TORTA DE FRAMBOESA</b>
@@ -156,7 +158,14 @@
 <script>
     function executa()
     {
+        carrossel.classList.remove("teste2")
        carrossel.classList.add("teste")
+
+    }
+    function executa2()
+    {
+        carrossel.classList.remove("teste")
+        carrossel.classList.add("teste2")
 
     }
     function adicionar(produto)

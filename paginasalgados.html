@@ -5,100 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Salgados</title>
-    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <title>Pagina salgados</title>
     <link rel="stylesheet" href="estilo_salgados.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Pinyon+Script&display=swap" rel="stylesheet">
-</head>
+    
 <body>
     <div class="principal">
-        <div class="D1">
-            
-            <div class="D2">
+        <div class="D12">
               
                  
-                 <div class="D10">
-                    <div class="D3">
-                        <a href="paginainicial.html">
-                        <img  title="Ver Página Inicial" src="casinha.png" width="140px" height="70px"> 
-                        </a> 
-    
-                    </div>
-                    <div class="D4">
-                        <a href="Paginalocalização.html">
-                        <img  title="Ver Localização" src="localização.png" width="50px" height="50px"> 
-                        </a> 
-                        
-                     </div>
-                     <div class="D5">
-                        <a href="paginahistorico.html">
-                        <img title="Ver Histórico" src="lupa.png" width="50px" height="50px"> 
-                        </a> 
-                        
-                     </div>
-                     <div class="D6">
-                        <a href="paginaperfil.html">
-                        <img  title="Ver Perfil" src="perfil.png" width="70px" height="70px"> 
-                        </a> 
-                        
-                     </div>
-                     <div class="D7">
-                        MEU CARRINHO
-                    </div>
-                    <div class="D8">
-                        <a href="paginacarrinho.html">
-                        <img  title="Ver carrinho" src="carrinho.png" width="130px" height="80px"> 
-                        </a>
-                    </div>
-                     <div class="D9">
-                        <img src="trespontos.png" width="280px" height="190px"> 
-                        
-                       
-                        
-                     </div>
-                     
-                    <div class="D11"></div>
-                    <div class="D12"></div>
-                    
+                
+            <div class="D3">
+                <a href="paginainicial.html">
+                <img  title="Ver Página Inicial" src="casinha.png" width="120px" height="60px"> 
+                </a> 
 
-                 </div>
-                 <div class="logoescrita">
-                    The Inclusive Bakery 
-                </div>
-                 
-
-                 
-                 
-                 
-            </div>  
+            </div>
             
-  
-        </div>
-        <img class="logo" src="cupcake.png"   > 
+             <div class="D5">
+                <a href="paginahistorico.html">
+                <img title="Ver Histórico" src="lupa.png" width="35px" height="35px"> 
+                </a> 
+                
+             </div>
+             <div class="D6">
+                <a href="paginaperfil.html">
+                <img  title="Ver Perfil" src="perfil.png" width="70px" height="70px"> 
+                </a> 
+                
+             </div>
+             <div class="D4">
+                <a href="Paginalocalização.html">
+                <img  title="Ver Localização" src="localização.png" width="40px" height="40px"> 
+                </a> 
+                
+             </div>
+             <div class="D7">
+                MEU CARRINHO
+            </div>
+            <div class="D8">
+                <a href="paginacarrinho.html">
+                <img  title="Ver carrinho" src="carrinho.png" width="130px" height="80px"> 
+                </a>
+            </div>
+             <div class="D9">
+                <img src="trespontos.png" width="280px" height="190px"> 
+                
+               
+                
+             </div>
+             
+            <div class="D11"></div>
+            
+            
+
+        
+
+         
+
+         
+         
+         
+    
+    
+
+
+<img class="logo" src="cupcake.png"   >  
         
         
 
         <div class="propaganda">
-            <div class="carrossel">
+            <div onclick="executa();" class="botaodeslizar">
+                <img src="seta02.png" width="40px">
+             </div>
+             <div onclick="executa2();" class="botaodeslizar2">
+                 <img src="seta002.png" width="40px">
+              </div>
+                
+            <div class="carrossel" id="carrossel">
                 <div class="todas">
-                    <div class="img_legenda">
-                        <img src="empadinha2.jpg" width="250px" height="320px" >
+                    <div id="empadinha" class="img_legenda">
+                        <img onclick="adicionar('empadinha');" src="empadinha2.jpg" width="250px" height="320px" >
                         <div class="preco">
                             <b>EMPADINHA</b>
-                            <b>R$7,00</b>
+                            <b>R$07,00</b>
                         </div>
                     </div>
 
-                    <div class="img_legenda">
-                        <img src="pastel de frango 02.jpg" width="250px" height="320px" >
+                    <div class="img_legenda" id="pastel de frango">
+                        <img onclick="adicionar('pastel de frango');" src="pastel.jpg" width="250px" height="320px" >
                         <div class="preco">
                             <b>PASTEL DE FRANGO</b>
                             <b>R$10,00</b>
                         </div>
                     </div> 
 
-                    <div class="img_legenda">
-                        <img src="pão caseiro2.jpg" width="250px" height="320px" >
+                    <div class="img_legenda" id="pão de forma">
+                        <img onclick="adicionar('pão de forma');" src="pão caseiro.jpg" width="250px" height="320px" >
                         <div class="preco">
                             <b>PÃO DE FORMA</b>
                             <b>R$12,00</b>
@@ -107,8 +111,8 @@
 
                     
 
-                    <div class="img_legenda">
-                        <img src="misto quente2.jpg" width="250px" height="320px"  >
+                    <div class="img_legenda" id="misto quente">
+                        <img onclick="adicionar('misto quente');" src="misto quente2.jpg" width="250px" height="320px"  >
                         <div class="preco">
                             <b>MISTO QUENTE</b>
                             <b>R$ 9,00</b>
@@ -118,11 +122,29 @@
                     
                     
                     
-                    <div class="img_legenda">
-                        <img src="imgcoxinha.png"width="250px" height="320px" >
+                    <div class="img_legenda" id="mini coxinhas">
+                        <img onclick="adicionar('mini coxinhas');" src="imgcoxinha.png"width="250px" height="320px" >
                         <div class="preco">
-                            <b>MINI COXINHA</b>
+                            <b>MINI COXINHAS</b>
                             <b>R$15,00</b>
+                        </div>
+                    </div> 
+
+
+                    <div class="img_legenda" id="pão de queijo">
+                        <img onclick="adicionar('brownie');"src="PÃO DE QUEIJO 02.JPG"width="250px" height="320px" >
+                        <div class="preco">
+                            <b>PÃO DE QUEIJO</b>
+                            <b>R$4,00</b>
+                        </div>
+                    </div> 
+
+
+                    <div class="img_legenda" id="mini pizza">
+                        <img onclick="adicionar('mini pizza');" src="minipizza.jpg"width="250px" height="320px" >
+                        <div class="preco">
+                            <b>MINI PIZZA</b>
+                            <b>R$7,00</b>
                         </div>
                     </div> 
 
@@ -132,4 +154,39 @@
     </div>
     
 </body>
+<script>
+    function executa()
+    {
+        carrossel.classList.remove("teste2")
+        carrossel.classList.add("teste")
+
+
+    }
+    function executa2()
+    {
+        carrossel.classList.remove("teste")
+        carrossel.classList.add("teste2")
+
+
+    }
+    function adicionar(produto)
+    {
+        if(document.getElementById(produto).style.borderColor!="green")
+        {
+            document.getElementById(produto).style.borderStyle = "solid"
+            document.getElementById(produto).style.borderColor="green"
+        }
+        else
+        {
+            document.getElementById(produto).style.borderStyle = "none"
+            document.getElementById(produto).style.borderColor="red"
+        }
+        
+
+        
+
+        
+        
+    }
+</script>
 </html>
