@@ -293,6 +293,7 @@ a
     flex-direction:row;
     top: 140px;
     position: relative;
+   
 
 
    
@@ -408,3 +409,27 @@ a
     z-index: 10;
 
 }
+.titulo
+{
+    font-size: 60px;
+    top: 210px;
+    height: 200px;
+    width: 200px;
+    z-index: 10;
+    left:70px;
+    color: rgb(50, 102, 94);
+    position: absolute;
+
+}
+.subtitulo
+{
+    font-family: 'Dancing Script', cursive; 
+    position: absolute;
+    top: 170px;
+    left:470px; 
+    z-index: 10;
+    font-size: 100px;
+
+}
+
+   
