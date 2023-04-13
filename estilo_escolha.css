@@ -1,0 +1,334 @@
+body
+{
+    
+    font-family: "Audiowide", sans-serif;
+    background-image: url("fundo4.jpg");
+    overflow: hidden;
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+
+   
+    
+   
+
+}
+.principal
+{
+
+   
+    border-color: brown;
+    border-width: 5px;
+    width: 100%;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:0px;
+    left:0px;
+}
+.logo
+{
+    width: 80px;
+    z-index: 11;
+    position:absolute;
+    top:-5px;
+    left:30px;
+}
+
+.D2
+{
+    
+    position: relative;
+    top: 0px;
+    left:0px; 
+    width: 100%;
+    height: 30vh;
+}
+.D3
+{
+    /*background-color: brown;*/
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 190px;
+    top:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 40px;
+    z-index:10;
+
+}
+.D4
+{
+    /*background-color: yellow;*/
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 590px;
+    top:9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 40px;
+    z-index:10;
+    
+}
+.D5
+{
+    /*background-color: pink;*/
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 320px;
+    top:9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 40px;
+    z-index:10;
+}
+.D6
+{
+    /*background-color: purple;*/
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 460px;
+    top:9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 40px;
+    z-index:10;
+}
+.D7
+{
+     /*background-color: purple;*/
+     position: absolute;
+     width: 150px;
+     height: 60px;
+     left: 1200px;
+     top:15px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     align-content: center;
+     cursor: pointer;
+     color: white;
+     margin-left: 5px;
+     z-index:10;
+    
+}
+.D8
+{
+   /* background-color: yellow;*/
+   position: absolute;
+   width: 60px;
+   height: 60px;
+   left: 1350px;
+   top:9px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+   cursor: pointer;
+   border-radius: 60px;
+   color:white;
+   margin-left: 28px;
+   z-index:10;
+}
+.D9
+{
+    /*background-color: yellow;*/
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1500px;
+    top:9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    cursor: pointer;
+    border-radius: 40px;
+    z-index:10;
+}
+.D12
+{
+   
+    width: 100%;
+    height: 82px;
+    background-color: rgb(44, 119, 119);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+     top:0px;
+     
+    
+     
+
+   
+    
+}
+
+
+
+.D3:hover
+{
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+
+}
+.D4:hover
+{
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+
+}
+.D5:hover
+{
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+
+}
+.D6:hover
+{
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+
+}
+.D8:hover
+{
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+}
+.D9:hover
+{
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+}
+.produtos
+{
+    width: 100%;
+    height: 65vh;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+.pcoxinha
+{
+    width: 20%;
+    height: 45vh;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: column;
+    display: flex;
+    margin-top: 800px;
+    
+}
+.pcoxinhaletras
+{
+    font-size: 35px;
+    margin-top: 20px;
+    top: 10px;
+}
+.pselecione
+{
+    width: 40%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.808);
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: column;
+    display: flex;
+    margin-top: 800px;;
+   
+   
+}
+.pselecione2
+{
+    font-family: "Freehand&family", sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.fieldcomidas
+{
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(42, 131, 134);
+    width: 400px;
+    height: 410px;
+    border-radius: 20px;
+    font-family: "Audiowide", sans-serif;
+}  
+.fieldqtdd
+{
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(42, 131, 134);
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    flex-direction: column;
+    display: flex;
+    
+}
+.quantidades
+{
+    width: 25%;
+    height: 30vh;
+    background-color: rgba(248, 242, 242, 0.808);
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    margin-top:800px;
+    
+}
+.qtdd
+{
+    font-size: 15px;
+    font-family: "Audiowide", sans-serif;
+}
+.number
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(42, 131, 134);
+    border-radius: 50px;
+}
+.addcarrinho
+{
+    background-color:rgba(48, 146, 150, 0.623); 
+    width: 40%;
+    height: 6vh;
+    color: white;
+    border-radius: 10px;
+}
