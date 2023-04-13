@@ -74,6 +74,7 @@ body
     width: 60px;
     height: 60px;
     top:9px;
+    left: 520px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -88,7 +89,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 500px;
+    left: 300px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -104,7 +105,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 630px;
+    left: 410px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -157,6 +158,7 @@ body
     width: 60px;
     height: 60px;
     left: 1370px;
+    top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -217,39 +219,33 @@ body
 
 .D3:hover
 {
-    background-color: black;
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D4:hover
 {
-    background-color: black;
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D5:hover
 {
-    background-color: black;
-
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 }
 .D6:hover
 {
-    background-color: black;
-
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 }
 .D8:hover
 {
-    background-color: black; 
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D9:hover
 {
-    background-color: black;
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
-.D2:hover
-{
-    border-color: black;
 
-}
 .D13
 {
     position: relative;

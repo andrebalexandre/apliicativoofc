@@ -33,7 +33,7 @@ body
     width: 80px;
     z-index: 11;
     position:absolute;
-    top:0px;
+    top:-5px;
     left:30px;
 }
 
@@ -185,7 +185,7 @@ body
     align-items: center;
     align-content: center;
     justify-items: center;
-     border-radius: 9px;
+     
      top:0px;
      
     
@@ -199,37 +199,36 @@ body
 
 .D3:hover
 {
-    background-color: black;
-
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 }
 .D4:hover
 {
-    background-color: black;
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D5:hover
 {
-    background-color: black;
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D6:hover
 {
-    background-color: black;
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D8:hover
 {
-    background-color: black; 
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D9:hover
 {
-    background-color: black;
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D2:hover
 {
-    border-color: black;
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D13
