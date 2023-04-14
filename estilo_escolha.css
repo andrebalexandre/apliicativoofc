@@ -332,3 +332,26 @@ body
     color: white;
     border-radius: 10px;
 }
+.preco
+{
+    width: 300px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.562);
+    display: flex;
+    justify-content: space-around;
+     justify-items: flex-end;
+     align-content: center;
+     align-items: center; 
+     flex-direction: column;
+     color:white;
+     top:600px;
+    
+     
+   position: absolute;
+   bottom: 0px;
+
+ }
+ .imgcoxinha
+ {
+
+ }

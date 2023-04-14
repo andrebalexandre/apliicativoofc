@@ -433,7 +433,7 @@ a
 }
 .personalize
 {
-    background-color: rgba(50, 102, 94, 0.589);
+    background-color: rgba(255, 255, 255, 0.613);
     width: 350px;
     height: 100px;
     z-index: 100;
@@ -452,7 +452,7 @@ a
 }
 .botaoescolha
 {
-    background-color: rgba(255, 255, 255, 0.613);
+    background-color:rgba(50, 102, 94, 0.589) ;
     width: 300px;
     height: 55px;
     display: flex;
