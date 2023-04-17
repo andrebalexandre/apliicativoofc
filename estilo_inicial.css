@@ -219,30 +219,29 @@ body
 
 .D3:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
-
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 }
 .D4:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 
 }
 .D5:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 }
 .D6:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 }
 .D8:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 
 }
 .D9:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 
 }
 
@@ -517,13 +516,22 @@ a
 }
 .op1:hover
 {
-    background-color: black;
-
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 }
 .op2:hover
 {
-    background-color: black;
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 
+}
+.sininho1
+{
+    height:25vh;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    animation: tada 8s;
 }
 
 
