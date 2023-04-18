@@ -199,31 +199,31 @@ body
 
 .D3:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 
 }
 .D4:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 
 }
 .D5:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 
 }
 .D6:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 
 }
 .D8:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 }
 .D9:hover
 {
-    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 }
 .produtos
 {
@@ -327,10 +327,11 @@ body
 .addcarrinho
 {
     background-color:rgba(48, 146, 150, 0.623); 
-    width: 40%;
+    width: 60%;
     height: 6vh;
     color: white;
     border-radius: 10px;
+    margin-left:50px
 }
 .preco
 {

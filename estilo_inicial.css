@@ -17,9 +17,7 @@ body
 .principal
 {
 
-    border-style: solid;
-    /*border-color: brown;*/
-    border-width: 5px;
+  
     width: 100%;
     height: 99vh;
     display: flex;
@@ -531,7 +529,7 @@ a
     justify-items: center;
     align-content: center;
     align-items: center;
-    animation: tada 8s;
+    animation: tada 8s infinite ;
 }
 
 
