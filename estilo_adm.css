@@ -75,7 +75,7 @@ body
     align-items: center; 
     border-radius: 40px;
     margin-top: 0px;
-    margin-left: -80px;
+    margin-left: -100px;
    
 }
 
@@ -214,7 +214,7 @@ a{
     background: rgba(239, 244, 246, 0.7);
     width: 400px;
     height: 700px;
-    margin-left: -180px;
+    margin-left: -290px;
     border-radius: 20px;
     border-color:rgba(53, 120, 141, 0.567);
     border-style: solid;
@@ -243,7 +243,7 @@ a{
     font-family: 'Dancing Script', cursive;
     position: absolute;
     top: 690px;
-    left:1200px; 
+    left:1190px; 
     z-index: 10;
     font-size: 30px;
 }
