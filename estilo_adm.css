@@ -152,7 +152,7 @@ a{
     height: 70px;
     margin-left:10px;
     margin-top: 20px;
-    background-color: rgb(53, 120, 141);
+    background-color: rgba(53, 120, 141, 0.846);
 }
 
 .botao2
@@ -163,7 +163,7 @@ a{
     height: 70px;
     margin-left:10px;
     margin-top: 100px;
-    background-color: rgb(53, 120, 141);
+    background-color: rgba(53, 120, 141, 0.846);
 }
 
 .botao3
@@ -174,7 +174,7 @@ a{
     height: 70px;
     margin-left:10px;
     margin-top:100px;
-    background-color: rgb(53, 120, 141);
+    background-color: rgba(53, 120, 141, 0.846);
 }
 .botao4
 {
@@ -184,7 +184,7 @@ a{
     height: 70px;
     margin-left:10px;
     margin-top: 130px;
-    background-color: rgb(53, 120, 141);
+    background-color: rgba(53, 120, 141, 0.846);
 }
 .lupa
 {
