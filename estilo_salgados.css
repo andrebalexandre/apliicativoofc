@@ -324,6 +324,12 @@ a
     margin-top: 120px;
     background-color: rgba(50, 102, 94, 0.589);
 }
+.img_legenda:hover
+{
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+}
 .carrossel
 {
     height: 500px;

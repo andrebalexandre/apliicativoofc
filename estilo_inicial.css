@@ -265,7 +265,15 @@ body
     top: 60px;
     left:400px; 
     z-index: 10;
+    transition: all 0.5s;
+    cursor: pointer;
 
+}
+
+
+.logoescrita:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 /* {
     position: absolute;
@@ -481,6 +489,11 @@ a
     font-size: 15PX;
     animation: mostrar_op1 2s forwards;
     cursor: pointer;
+    padding: .0rem 0rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    text-transform: uppercase;
+    
 }
 .op2
 {
@@ -488,7 +501,6 @@ a
     width: 50px; /*140*/
     height: 50px;
     border-radius: 25px;
-    background-color: rgb(47, 112, 112);
     top:505px;/*570*/
     left:35px; /* 1280*/
     font-size: 20px;
@@ -532,6 +544,107 @@ a
     align-items: center;
     animation: tada 8s infinite ;
 }
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(47, 112, 112);
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.589);
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  .button:hover {
+    color: #fff;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
+  
+  /* optional reset for presentation */
+  * {
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .button2 {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .button2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(47, 112, 112);
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  .button2:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.589);
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  .button2:hover {
+    color: #fff;
+  }
+  .button2:hover:before {
+    width: 100%;
+  }
+  
+  
+  * {
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  
+  
 
-
-
+  
