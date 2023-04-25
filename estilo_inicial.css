@@ -556,6 +556,7 @@ a
     position: relative;
     overflow: hidden;
     z-index: 1;
+    
   }
   .button:after {
     content: "";
@@ -587,12 +588,7 @@ a
     width: 100%;
   }
   
-  /* optional reset for presentation */
-  * {
-    font-family: Arial;
-    text-decoration: none;
-    font-size: 20px;
-  }
+  
   
   .button2 {
     display: inline-block;
@@ -638,11 +634,9 @@ a
   }
   
   
-  * {
+ 
    
-    text-decoration: none;
-    font-size: 20px;
-  }
+    
   
   
   
