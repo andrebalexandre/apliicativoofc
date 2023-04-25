@@ -593,6 +593,87 @@ a
     align-items: center;
     animation: tada 8s infinite ;
 }
-
+.notificacao
+{
+    /*background-color: yellow;*/
+    width: 300px;
+    height: 500px;
+    margin-left: 1270px;
+    margin-top:-300px;
+}
+.botaomenu
+{
+    width: 60px;
+    height: 60px;
+    background-color:rgb(47, 112, 112);
+    border-radius: 40px;
+    margin-left:250px;
+    margin-top:240px;
+}
+.menu
+{
+  margin-top: 10px;
+  margin-left: 8px;
+}
+.botaoenvelope
+{
+    width: 60px;
+    height: 60px;
+    background-color:rgb(47, 112, 112);
+    border-radius: 40px;
+    margin-top: -58px;
+    margin-left: 170px;
+    
+}
+.envelope
+{
+    margin-left:14px;
+    margin-top:14px
+}
+.botaoestrela
+{
+    width: 60px;
+    height: 60px;
+    background-color:rgb(47, 112, 112);
+    border-radius: 40px;
+    margin-top: -58px;
+    margin-left: 90px;
+    
+}
+.estrela 
+{
+  margin-left:14px;
+  margin-top: 13px;
+}
+.botaorelogio
+{
+    width: 60px;
+    height: 60px;
+    background-color:rgb(47, 112, 112);
+    border-radius: 40px;
+    margin-top: -58px;
+    margin-left: 17px;
+    
+}
+.relogio 
+{
+    margin-top: 13px;
+    margin-left: 15px;
+}
+.botaoredes
+{
+    width: 60px;
+    height: 60px;
+    background-color:rgb(47, 112, 112);
+    border-radius: 40px;
+    margin-top: -58px;
+    margin-left: -60px;
+    
+}
+.insta
+{
+   margin-left: 14px;
+   margin-top: 12px;
+}
 
 
