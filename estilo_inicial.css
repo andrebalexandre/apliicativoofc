@@ -118,7 +118,7 @@ body
 {
     /*background-color: purple;*/
     position: absolute;
-    width: 150px;
+    width: 170px;
     height: 60px;
     left: 1000px;
     top:15px;
@@ -136,9 +136,9 @@ body
 {
    /* background-color: yellow;*/
     position: absolute;
-    width: 60px;
+    width: 70px;
     height: 60px;
-    left: 1250px;
+    left: 1190px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -156,7 +156,7 @@ body
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 1370px;
+    left: 1350px;
     top: 10px;
     display: flex;
     flex-direction: row;
@@ -639,7 +639,7 @@ a
   
   
   * {
-    font-family: Arial;
+   
     text-decoration: none;
     font-size: 20px;
   }
