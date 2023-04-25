@@ -48,6 +48,7 @@ body
     width: 100%;
     height: 30vh;
 }
+
 .D3
 {
     /*background-color: brown;*/
@@ -63,8 +64,43 @@ body
     align-content: center;
     cursor: pointer;
     border-radius: 60px;
+    overflow: hidden;
 
 }
+
+  .D3:hover .interior
+   {
+    
+    transition-duration: 1s;
+    left:0px;
+    animation-fill-mode: forwards;
+    animation: animacao 1s alternate-reverse;
+  }
+  
+
+  @keyframes animacao {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -60px;
+    }
+    
+  }
+  
+  .interior
+  {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.495);
+    position: absolute;
+    top:0px;
+    left:-60px;
+
+
+  }
+  
+ 
 .D4
 {
     /*background-color: yellow;*/
@@ -81,7 +117,19 @@ body
     align-content: center;
     cursor: pointer;
     border-radius: 60px;
+    overflow: hidden;
 }
+.D4:hover .interior
+   {
+    
+    transition-duration: 1s;
+    left:0px;
+    animation-fill-mode: forwards;
+    animation: animacao 1s alternate-reverse;
+  }
+ 
+    
+  
 .D5
 {
     /*background-color: pink;*/
@@ -97,7 +145,16 @@ body
     align-content: center;
     cursor: pointer;
     border-radius: 60px;
+    overflow: hidden;
 }
+.D5:hover .interior
+   {
+    
+    transition-duration: 1s;
+    left:0px;
+    animation-fill-mode: forwards;
+    animation: animacao 1s alternate-reverse;
+  }
 .D6
 {
     /*background-color: purple;*/
@@ -113,12 +170,21 @@ body
     align-content: center;
     cursor: pointer;
     border-radius: 60px;
+    overflow: hidden;
 }
+.D6:hover .interior
+   {
+    
+    transition-duration: 1s;
+    left:0px;
+    animation-fill-mode: forwards;
+    animation: animacao 1s alternate-reverse;
+  }
 .D7
 {
     /*background-color: purple;*/
     position: absolute;
-    width: 170px;
+    width: 150px;
     height: 60px;
     left: 1000px;
     top:15px;
@@ -130,15 +196,16 @@ body
     cursor: pointer;
     color: white;
     margin-left: 5px;
+    overflow: hidden;
     
 }
 .D8
 {
    /* background-color: yellow;*/
     position: absolute;
-    width: 70px;
+    width: 60px;
     height: 60px;
-    left: 1190px;
+    left: 1220px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -149,7 +216,16 @@ body
     border-radius: 60px;
     color:white;
     margin-left: 28px;
+    overflow: hidden;
 }
+.D8:hover .interior
+   {
+    
+    transition-duration: 1s;
+    left:0px;
+    animation-fill-mode: forwards;
+    animation: animacao 1s alternate-reverse;
+  }
 .D9
 {
     /*background-color: yellow;*/
@@ -166,9 +242,18 @@ body
     justify-items: center;
     cursor: pointer;
     border-radius: 500px;
+    overflow: hidden;
     
     
 }
+.D9:hover .interior
+   {
+    
+    transition-duration: 1s;
+    left:0px;
+    animation-fill-mode: forwards;
+    animation: animacao 1s alternate-reverse;
+  }
 .D10
 {
     
@@ -215,35 +300,6 @@ body
 }
 
 
-
-.D3:hover
-{
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
-}
-.D4:hover
-{
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
-
-}
-.D5:hover
-{
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
-}
-.D6:hover
-{
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
-}
-.D8:hover
-{
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
-
-}
-.D9:hover
-{
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
-
-}
-
 .D13
 {
     position: relative;
@@ -265,15 +321,7 @@ body
     top: 60px;
     left:400px; 
     z-index: 10;
-    transition: all 0.5s;
-    cursor: pointer;
 
-}
-
-
-.logoescrita:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 /* {
     position: absolute;
@@ -439,9 +487,14 @@ a
     font-family: 'Pinyon Script', cursive;font-size: 98px;
     width:1500px;
     height: 500px;
-    top: 100px
+    top: 100px;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     
 
+
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 .logo
 {
@@ -489,11 +542,6 @@ a
     font-size: 15PX;
     animation: mostrar_op1 2s forwards;
     cursor: pointer;
-    padding: .0rem 0rem;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    text-transform: uppercase;
-    
 }
 .op2
 {
@@ -501,6 +549,7 @@ a
     width: 50px; /*140*/
     height: 50px;
     border-radius: 25px;
+    background-color: rgb(47, 112, 112);
     top:505px;/*570*/
     left:35px; /* 1280*/
     font-size: 20px;
@@ -544,101 +593,6 @@ a
     align-items: center;
     animation: tada 8s infinite ;
 }
-.button {
-    display: inline-block;
-    padding: 0.75rem 1.25rem;
-    border-radius: 10rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 0.15rem;
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    
-  }
-  .button:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(47, 112, 112);
-    border-radius: 10rem;
-    z-index: -2;
-  }
-  .button:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color:rgba(255, 255, 255, 0.589);
-    transition: all 0.3s;
-    border-radius: 10rem;
-    z-index: -1;
-  }
-  .button:hover {
-    color: #fff;
-  }
-  .button:hover:before {
-    width: 100%;
-  }
-  
-  
-  
-  .button2 {
-    display: inline-block;
-    padding: 0.75rem 1.25rem;
-    border-radius: 10rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 0.15rem;
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .button2:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(47, 112, 112);
-    border-radius: 10rem;
-    z-index: -2;
-  }
-  .button2:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color:rgba(255, 255, 255, 0.589);
-    transition: all 0.3s;
-    border-radius: 10rem;
-    z-index: -1;
-  }
-  .button2:hover {
-    color: #fff;
-  }
-  .button2:hover:before {
-    width: 100%;
-  }
-  
-  
- 
-   
-    
-  
-  
-  
 
-  
+
+
