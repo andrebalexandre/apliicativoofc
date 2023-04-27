@@ -603,7 +603,7 @@ a
     height: 70px;
     margin-left: 1250px;
     margin-top:-50px;
-    z-index: 4;
+    position: relative;
 }
 .botaomenu
 {
@@ -612,19 +612,22 @@ a
     background-color:white;
     border-radius: 40px;
     margin-left:250px;
-    margin-top:40px;
+    top: 0px;
     border-color: black;
     border-style: solid;
     border-width: 2px;
     z-index: 10;
-    
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+   
 }
 
-.menu
-{
-  margin-top: 10px;
-  margin-left: 8px;
-}
+
 .botaomenu:hover
 {
     background-color: rgb(44, 119, 119) ;
@@ -636,22 +639,39 @@ a
     background-color:white;
     border-color:black;
     border-radius: 40px;
-    margin-top: -60px;
-    margin-left: 170px;
+    top: 0px;
+    margin-left:250px;
     border-style: solid;
     border-width: 2px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+   
+}
+.envelope2
+{
     animation: mostrar_botaoenvelope 2s forwards;
 }
 @keyframes mostrar_botaoenvelope
 {
-    0%{margin-top:-60px; margin-left:250px;}
-    100%{margin-Top:-63px; margin-left:170px}
+    0%{ margin-left:250px;}
+    100%{ margin-left:170px}
 }
-.envelope
+.envelope2_recolher
 {
-    margin-left:14px;
-    margin-top:14px
+    animation: recolher_botaoenvelope 2s forwards; 
+    
 }
+@keyframes recolher_botaoenvelope
+{
+    0%{margin-left:170px;}
+    100%{margin-left:250px}
+}
+
 .botaoenvelope:hover
 {
     background-color: rgb(44, 119, 119) ;
@@ -662,23 +682,40 @@ a
     height: 60px;
     background-color:white;
     border-radius: 40px;
-    margin-top: -63px;
-    margin-left: 90px;
+    top: 0px;
+    margin-left:250px;
     border-color: black;
     border-style: solid;
     border-width: 2px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+   
+}
+.estrela2
+{
     animation: mostrar_botaoestrela 2s forwards; 
 }
 @keyframes mostrar_botaoestrela
 {
-    0%{margin-top:-60px; margin-left:250px;}
-    100%{margin-Top:-63px; margin-left:90px}
+    0%{ margin-left:250px;}
+    100%{margin-left:90px}
 }
-.estrela 
+.estrela2_recolher
 {
-  margin-left:14px;
-  margin-top: 13px;
+    animation: recolher_botaoestrela 2s forwards; 
+    
 }
+@keyframes recolher_botaoestrela
+{
+    0%{margin-left:90px;}
+    100%{margin-left:250px}
+}
+
 .botaoestrela:hover
 {
     background-color: rgb(44, 119, 119) ;
@@ -689,23 +726,40 @@ a
     height: 60px;
     background-color:white;
     border-radius: 40px;
-    margin-top: -64px;
-    margin-left: 10px;
+    top: 0px;
+    margin-left:250px;
     border-color: black;
     border-style: solid;
     border-width: 2px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+   
+}
+.relogio2
+{
     animation: mostrar_botaorelogio 2s forwards; 
 }
 @keyframes mostrar_botaorelogio
 {
-    0%{margin-top:-60px; margin-left:250px;}
-    100%{margin-Top:-63px; margin-left:10px}
+    0%{ margin-left:250px;}
+    100%{ margin-left:10px}
 }
-.relogio 
+.relogio2_recolher
 {
-    margin-top: 13px;
-    margin-left: 15px;
+    animation: recolher_botaorelogio 2s forwards; 
+    
 }
+@keyframes recolher_botaorelogio
+{
+    0%{margin-left:10px;}
+    100%{margin-left:250px}
+}
+
 .botaorelogio:hover
 {
     background-color: rgb(44, 119, 119) ;
@@ -716,26 +770,64 @@ a
     height: 60px;
     background-color:white;
     border-radius: 40px;
-    margin-top: -63px;
-    margin-left: -70px;
+    top: 0px;
+    margin-left:250px;
     border-color: black;
     border-style: solid;
     border-width: 2px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+   
+}
+.redes2
+{
     animation: mostrar_botaoredes 2s forwards; 
+    
 }
 @keyframes mostrar_botaoredes
 {
-    0%{margin-top:-60px; margin-left:250px;}
-    100%{margin-Top:-63px; margin-left:-70px}
+    0%{margin-left:250px;}
+    100%{margin-left:-70px}
 }
-.insta
+.redes2_recolher
 {
-   margin-left: 14px;
-   margin-top: 12px;
+    animation: recolher_botaoredes 2s forwards; 
+    
 }
+@keyframes recolher_botaoredes
+{
+    0%{margin-left:-70px;}
+    100%{margin-left:250px}
+}
+
 .botaoredes:hover
 {
     background-color: rgb(44, 119, 119) ;
+}
+.mensagem
+{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top:50px;
+    left:-300px;
+    color:white;
+
+}
+.faleconosco
+{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    top:280px;
+    left:1200px;
+    position: absolute;
 }
 
 

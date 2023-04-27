@@ -156,25 +156,71 @@
             </div>
         
             <div class="notificacao">
-                <div class="botaomenu">
-                    <img class= "menu" src="menu.png" width="40px">
-                </div>
-                <div class="botaoenvelope">
+                
+                <div onclick="animadoenvelope();" class="botaoenvelope" id="botaoenvelope">
                     <img class= "envelope" src="envelope.png" width="30px">  
                 </div>
-                <div class="botaoestrela">
+                <div class="botaoestrela" id="botaoestrela">
                     <img class="estrela" src="estrela.png"width="30px">
+                   
                 </div>
-                <div class="botaorelogio">
+                <div class="botaorelogio" id="botaorelogio">
                     <img class="relogio" src="relogio.png" width="30px">
                 </div>
-                <div class="botaoredes">
+                <div class="botaoredes" id="botaoredes" >
                     <img class="insta" src="insta.png" width="30px">
                 </div>
+                <div onclick="animado();" class="botaomenu">
+                    <img class= "menu" src="menu.png" width="40px">
+                </div>
+
+                <div class="mensagem" id="mensagem">
+
+                </div>
         </div>
+        <div class="faleconosco"></div>
     </div>
 </body>
 <script>
+    clicks=0
+    function animado()
+    {
+        mensagem.innerHTML="menuaberto"
+        clicks=clicks+1
+        if (clicks==1)
+        {
+            botaoenvelope.classList.remove("envelope2_recolher")
+            botaoestrela.classList.remove("estrela2_recolher")
+            botaorelogio.classList.remove("relogio2_recolher")
+            botaoredes.classList.remove("redes2_recolher")
+
+            botaoenvelope.classList.add("envelope2")
+            botaoestrela.classList.add("estrela2")
+            botaorelogio.classList.add("relogio2")
+            botaoredes.classList.add("redes2")
+        
+        }
+        else 
+        {
+            clicks=0
+            botaoenvelope.classList.remove("envelope2")
+            botaoestrela.classList.remove("estrela2")
+            botaorelogio.classList.remove("relogio2")
+            botaoredes.classList.remove("redes2")
+
+            botaoenvelope.classList.add("envelope2_recolher")
+            botaoestrela.classList.add("estrela2_recolher")
+            botaorelogio.classList.add("relogio2_recolher")
+            botaoredes.classList.add("redes2_recolher")
+        }
+
+        
+
+    }
+    function animadoenvelope()
+    {
+        mensagem.innerHTML="envelope"
+    }
 
     
 </script>
