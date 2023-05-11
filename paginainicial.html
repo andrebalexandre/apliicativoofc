@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina inicial</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
     <link rel="stylesheet" href="estilo_inicial.css">
     <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Pinyon+Script&display=swap" rel="stylesheet">
@@ -174,18 +175,33 @@
                     <img class= "menu" src="menu.png" width="40px">
                 </div>
 
-                <div class="mensagem" id="mensagem">
+                
 
-                </div>
+                
         </div>
-        <div class="faleconosco"></div>
+        <div class="faleconosco">
+            <div class="img">
+                <a href="paginainicial.html">
+                      <img title="Ir Para Página Inicial"  src="cupcake.png" width="100px"> 
+               </a>
+            </div>
+            <div class=" titulo">
+                FALE CONOSCO
+            </div>
+            <br>
+            <br>
+            <br>
+             <input class="mensagemf" type="text" id="mensagemf"> 
+            <button  class="botao_enviarf" onclick="Enviar();">ENVIAR</button>
+            <div  class="resposta" id="resposta">  </div>
+     </div>
     </div>
 </body>
 <script>
     clicks=0
     function animado()
     {
-        mensagem.innerHTML="menuaberto"
+        
         clicks=clicks+1
         if (clicks==1)
         {
@@ -219,8 +235,66 @@
     }
     function animadoenvelope()
     {
-        mensagem.innerHTML="envelope"
+        
+        clicks=clicks+1
+        if (clicks==1)
+        {
+            faleconosco.classList.remove("faleconosco2_recolher")
+            faleconosco.classList.add("faleconosco2")
+            
+
+        }
+        else 
+        {
+            clicks=0
+            faleconosco.classList.remove("faleconosco2")
+            faleconosco.classList.add("faleconosco2_recolher")
+            
+
+        }
+
     }
+    topico = "senai/fofoquinha1";  // Variável que ficará no servidor MQTT
+
+  // Conexão:
+  client = new Paho.MQTT.Client("broker.hivemq.com", Number(8000), "");
+
+  // Funções executadas quando a conexão é perdida e quando uma mensagem chega:
+  client.onConnectionLost = ConexaoPerdida;
+  client.onMessageArrived = MensagemRecebida;
+
+  // Função chamada quando a conexão for realizada:
+  client.connect({onSuccess:Conectar});
+
+  // A função Conectar deve criar a variável (tópico) no computador remoto:
+  function Conectar() {
+    
+    client.subscribe(topico);  // Tópico (variável) criado no servidor MQTT
+    
+  }
+  
+  function ConexaoPerdida(responseObject) {
+    if (responseObject.errorCode !== 0) {
+      resposta.innerHTML += "Desconectado";
+    }
+  }
+
+  // Função executada quando a variável (tópico) no servidor receber uma mensagem:
+  function MensagemRecebida(message) {
+      resposta.innerHTML += "<br><br>" + message.payloadString;
+      
+  }
+
+  function Enviar()
+  {
+    texto = mensagemf.value;
+    texto= "SUPORTE: " + texto 
+
+    message = new Paho.MQTT.Message(texto);
+    message.destinationName = topico;
+    client.send(message);
+    mensagemf.value="";
+  }
 
     
 </script>

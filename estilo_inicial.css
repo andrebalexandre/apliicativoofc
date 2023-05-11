@@ -602,7 +602,7 @@ a
     width: 300px;
     height: 70px;
     margin-left: 1250px;
-    margin-top:-50px;
+    margin-top:-20px;
     position: relative;
 }
 .botaomenu
@@ -828,6 +828,82 @@ a
     top:280px;
     left:1200px;
     position: absolute;
+    z-index: 50;
+    flex-direction: column;
+    display: flex;
+}
+.faleconosco2
+{
+    animation: mostrar_faleconosco2 2s forwards;
+}
+@keyframes mostrar_faleconosco2
+{
+    0%{ top:0px;}
+    100%{ top:280px}
+}
+.faleconosco2_recolher
+{
+    animation: recolher_faleconosco 2s forwards; 
+    
+}
+@keyframes recolher_faleconosco
+{
+    0%{ top:280px;}
+    100%{top:0px}
 }
 
+.img
+{
+    margin-left:90px ;
+    margin-top:20px;
+    width: 260px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    /*background-color: black;*/
+    border-radius: 470px;
+}
 
+.mensagemf
+{
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    
+
+}
+.botao_enviarf
+{
+   height:30px ;
+   width: 100px;
+   border-radius: 20px;
+   font-family: 'Bebas Neue', cursive;
+   font-size: 10px;
+   cursor: pointer;
+   margin-left: 100px;
+   margin-top: 20px;
+}
+.botao_enviarf:hover
+{
+    background-color:rgb(39, 104, 104);
+
+}
+.titulo
+{
+    
+    font-size:20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+   
+}
