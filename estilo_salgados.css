@@ -340,7 +340,7 @@ a
     justify-items: center;
     align-content: center;
     align-items: center; 
-    margin-top:230px ;
+    margin-top:150px ;
     margin-left: 15px;
     overflow: hidden;
    
@@ -398,7 +398,7 @@ a
     width: 60px;
     height: 60px;
     right: 30px;
-    top:745px;
+    top:685px;
     z-index: 10;
     
 }
@@ -409,14 +409,14 @@ a
     width: 60px;
     height: 60px;
     right: 1480px;
-    top:740px;
+    top:680px;
     z-index: 10;
 
 }
 .titulo
 {
     font-size: 60px;
-    top: 210px;
+    top: 160px;
     height: 200px;
     width: 200px;
     z-index: 10;
@@ -429,49 +429,88 @@ a
 {
     font-family: 'Dancing Script', cursive; 
     position: absolute;
-    top: 170px;
+    top: 120px;
     left:470px; 
     z-index: 10;
     font-size: 100px;
 
 }
+
 .personalize
 {
-    background-color: rgba(255, 255, 255, 0.613);
-    width: 350px;
-    height: 100px;
-    z-index: 100;
-    top:180px;
-    left: 1100px;
-    position:absolute;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-   
-    
-
-   
-
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
-.botaoescolha
+
+
+.button 
 {
-    background-color:rgba(50, 102, 94, 0.589) ;
-    width: 300px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    color:black;
-    font-family: 'Dancing Script', cursive; 
-    font-size: 30px;
-    
-}
-.personalize :hover
-{
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($color, 15%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
 }
 
 
-   
+.container {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-bottom: 2rem;
+  color: #777;
+}
+span {
+  display: block;
+  margin-top: 2rem;
+  font-size: .7rem;
+  color: #777;
+  a {
+    font-size: .7rem;
+    color: #999;
+    text-decoration: underline;
+  }
+}
