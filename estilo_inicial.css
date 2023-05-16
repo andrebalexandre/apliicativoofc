@@ -831,26 +831,10 @@ a
     z-index: 50;
     flex-direction: column;
     display: flex;
+    opacity: 0;
+    box-shadow:3px 3px rgba(0, 0, 0, 0.628) ;
 }
-.faleconosco2
-{
-    animation: mostrar_faleconosco2 2s forwards;
-}
-@keyframes mostrar_faleconosco2
-{
-    0%{ top:0px;}
-    100%{ top:280px}
-}
-.faleconosco2_recolher
-{
-    animation: recolher_faleconosco 2s forwards; 
-    
-}
-@keyframes recolher_faleconosco
-{
-    0%{ top:280px;}
-    100%{top:0px}
-}
+
 
 .img
 {
@@ -907,3 +891,110 @@ a
     align-items: center;
    
 }
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+
+  
+
+.description {
+  margin-top: 50px;
+  text-align: center;
+  color: #999;
+  transition: opacity 0.3s ease;
+}
+
+.description a {
+  color: #4A9DF6;
+  text-decoration: none;
+}
+.avaliacao
+{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    top:280px;
+    left:1200px;
+    position: absolute;
+    z-index: 51;
+    flex-direction: column;
+    display: flex;
+    opacity: 1;
+    font-size: 15px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    box-shadow:3px 3px rgba(0, 0, 0, 0.628) ;
+}
+.ESTRELINHA1
+{
+    height: 50px;
+    width: 50px;
+    margin-top:150px;
+
+  
+    
+}
+.ESTRELINHA2
+{
+    height: 50px;
+    width: 50px;
+    margin-top:150px;
+  
+    
+}
+.ESTRELINHA3
+{
+    height: 50px;
+    width: 50px;
+    margin-top:150px;
+  
+    
+}
+.ESTRELINHA4
+{
+    height: 50px;
+    width: 50px;
+    margin-top:150px;
+  
+    
+}
+.ESTRELINHA5
+{
+    height: 50px;
+    width: 50px;
+    margin-top:150px;
+  
+    
+}
+
+   
+.ESTRELINHAS
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    top:80px;
+    position: absolute;
+
+
+}
+.LOGOESTRELA
+{
+    top:30px;
+    position: absolute;
+}
+
+

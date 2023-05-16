@@ -436,72 +436,90 @@ a
 
 }
 
-.button {
+.personalize
+{
+    top:50px;
+}
+
+.botaoescolha {
+    top:100px;
+  }
+  
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
     display: inline-block;
-    padding: 0.75rem 1.25rem;
-    border-radius: 10rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 0.15rem;
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .button:after {
-    content: "";
+    border-radius: 100px;
+    transition: all 0.2s;
     position: absolute;
-    bottom: 0;
-    left: 0;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-white {
+    background-color:rgba(50, 102, 94, 0.994) ;
+    color:white;
+    top:700px;
+    left:600px;
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
     width: 100%;
-    height: 100%;
-    background-color: #0cf;
-    border-radius: 10rem;
-    z-index: -2;
-  }
-  .button:before {
-    content: "";
+    border-radius: 100px;
     position: absolute;
-    bottom: 0;
+    top: 10;
     left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #008fb3;
-    transition: all 0.3s;
-    border-radius: 10rem;
     z-index: -1;
-  }
-  .button:hover {
-    color: #fff;
-  }
-  .button:hover:before {
-    width: 100%;
+    transition: all 0.4s;
   }
   
-  
-  .container {
-    padding-top: 50px;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
+  .btn-white::after {
+    background-color:rgba(0, 0, 0, 0.414);
   }
   
-  h1 {
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    margin-bottom: 2rem;
-    color: #777;
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
   }
   
-  span {
-    display: block;
-    margin-top: 2rem;
-    font-size: 0.7rem;
-    color: #777;
+  .btn-animated {
+    -webkit-animation: moveInBottom 5s ease-out;
+            animation: moveInBottom 5s ease-out;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
   }
-  span a {
-    font-size: 0.7rem;
-    color: #999;
-    text-decoration: underline;
+  
+  @-webkit-keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }

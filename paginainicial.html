@@ -104,6 +104,7 @@
                     
                     </div>
                 </div> 
+                
                 <div class="carrossel">
                     <div class="todas">
                         <div class="img_legenda">
@@ -158,11 +159,11 @@
         
             <div class="notificacao">
                 
-                <div onclick="animadoenvelope();" class="botaoenvelope" id="botaoenvelope">
-                    <img class= "envelope" src="envelope.png" width="30px">  
+                <div  class="botaoenvelope" id="botaoenvelope">
+                    <img onclick="animadoenvelope();" class= "envelope" src="envelope.png" width="30px">  
                 </div>
                 <div class="botaoestrela" id="botaoestrela">
-                    <img class="estrela" src="estrela.png"width="30px">
+                    <img onclick="animadoestrela();" src="estrela.png"width="30px">
                    
                 </div>
                 <div class="botaorelogio" id="botaorelogio">
@@ -178,27 +179,52 @@
                 
 
                 
-        </div>
-        <div class="faleconosco">
-            <div class="img">
-                <a href="paginainicial.html">
-                      <img title="Ir Para Página Inicial"  src="cupcake.png" width="100px"> 
-               </a>
             </div>
-            <div class=" titulo">
+            <div class="faleconosco" id="faleconosco">
+                <div class="img">
+                    <a href="paginainicial.html">
+                      <img title="Ir Para Página Inicial"  src="cupcake.png" width="100px"> 
+                    </a>
+                </div>
+            <div class="titulo">
                 FALE CONOSCO
             </div>
-            <br>
-            <br>
-            <br>
+                <br>
+                <br>
+                <br>
              <input class="mensagemf" type="text" id="mensagemf"> 
-            <button  class="botao_enviarf" onclick="Enviar();">ENVIAR</button>
+                <button  class="botao_enviarf" onclick="Enviar();">ENVIAR</button>
             <div  class="resposta" id="resposta">  </div>
+
      </div>
-    </div>
+            <div  class="avaliacao" id="avaliacao">
+                
+               
+                <img CLASS="LOGOESTRELA" title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
+                <B>NOS AVALIE:</B>
+                <DIV CLASS="ESTRELINHAS">
+
+                        <IMG onclick="ativaestrela('ESTRELINHA1');" CLASS="ESTRELINHA1"     id="ESTRELINHA1"      SRC="avaliacao01.png">
+                        <IMG onclick="ativaestrela('ESTRELINHA2');" CLASS="ESTRELINHA2" id="ESTRELINHA2"  SRC="avaliacao01.png">
+                        <IMG onclick="ativaestrela('ESTRELINHA3');" CLASS="ESTRELINHA3" id= "ESTRELINHA3"SRC="avaliacao01.png">
+                        <IMG onclick="ativaestrela('ESTRELINHA4');" CLASS="ESTRELINHA4" id="ESTRELINHA4" SRC="avaliacao01.png">
+                        <IMG onclick="ativaestrela('ESTRELINHA5');" CLASS="ESTRELINHA4" id="ESTRELINHA5" SRC="avaliacao01.png">
+        
+                </DIV>
+                
+                    
+                
+
+
+            </div>
+</div>
+
+       
+     
 </body>
+<script src="jquery.js"></script>
 <script>
-    clicks=0
+   clicks=0
     function animado()
     {
         
@@ -233,23 +259,48 @@
         
 
     }
+
+    clicks2=0
     function animadoenvelope()
     {
+        $("#avaliacao").animate({opacity:'0'},1000)
         
-        clicks=clicks+1
-        if (clicks==1)
+        clicks2=clicks2+1
+      
+        if (clicks2==1)
         {
-            faleconosco.classList.remove("faleconosco2_recolher")
-            faleconosco.classList.add("faleconosco2")
-            
+          $("#faleconosco").animate({opacity:'1'},1000)
+         
 
         }
         else 
         {
-            clicks=0
-            faleconosco.classList.remove("faleconosco2")
-            faleconosco.classList.add("faleconosco2_recolher")
-            
+            clicks2=0
+            $("#faleconosco").animate({opacity:'0'},1000)
+          
+
+        }
+
+    }
+    clicks3=0
+    function animadoestrela()
+    {
+        
+        $("#faleconosco").animate({opacity:'0'},1000)
+
+        clicks3=clicks3+1
+      
+        if (clicks3==1)
+        {
+          $("#avaliacao").animate({opacity:'1'},1000)
+         
+
+        }
+        else 
+        {
+            clicks3=0
+            $("#avaliacao").animate({opacity:'0'},1000)
+          
 
         }
 
@@ -296,6 +347,13 @@
     mensagemf.value="";
   }
 
-    
+  function ativaestrela(meuId)
+  {
+    nome_imagem=document.getElementById(meuId).src
+    if(nome_imagem=="avaliacao01.png")
+    {
+        document.getElementById(meuId).src  = "avaliacao02.png" 
+    }
+  }
 </script>
 </html>
