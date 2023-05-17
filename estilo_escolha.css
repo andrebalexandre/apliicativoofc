@@ -464,6 +464,8 @@ a
     align-items: center; 
     flex-direction: row;
     display: flex;
+    animation: zoomIn 2s;
+
 }
 .produtosbranco
 {
@@ -476,6 +478,7 @@ a
     align-items: center; 
     flex-direction: column;
     display: flex;
+    
 }
 .produtostrans
 {
