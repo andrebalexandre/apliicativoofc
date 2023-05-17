@@ -366,18 +366,18 @@ a
 }
 .linha2
 {
-    height: 250px;
+    height: 450px;
     width: 25%;
     display: flex;
     flex-direction:column;
     /*background-color: red;*/
     margin-left: 0px;
-    justify-content: space-around;
+    justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center; 
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 20px;
+    margin-top: -50px;
    
     
 
@@ -413,8 +413,11 @@ a
 {
     display: flex;
     flex-direction: row;
-    margin-left: 0px;
+    margin-left: 40px;
     animation: deslizar 15s infinite;
+
+   
+   
     
 }
 @keyframes deslizar {
@@ -440,10 +443,11 @@ a
 .carrossel
 {
     height: 400px;
-    width: 45%;
+    width: 65%;
+    margin-left:700px;
     display: flex;
     flex-direction:row;
-    z-index: 1;
+    z-index: 100;
     
    
     justify-items: center;
@@ -1034,7 +1038,7 @@ html, body {
 {
     MARGIN-TOP:-200PX
 }
-/*.btn.is-open ~ .description {
+.btn.is-open ~ .description {
     opacity: 0;
   }
   
@@ -1058,6 +1062,8 @@ html, body {
     display: block;
     width: 100%;
     height: 100%;
+    left: -120px;
+    border-radius: 20px; 
     line-height: 80px;
     background-color:rgb(39, 104, 104) ;
     color: black;
@@ -1077,13 +1083,19 @@ html, body {
   .btn.is-open .btn-front {
     pointer-events: none;
     line-height: 160px;
+    
   }
   
   
   .btn-back {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    left:150px;
+    opacity: 1;
+    font-size: 15PX;
+    z-index: 1;
+    border-radius: 20px;
     background-color: #eee;
     color: #222;
     transform: translateZ(-2px) rotateX(180deg);
@@ -1095,6 +1107,7 @@ html, body {
   .btn-back p {
     margin-top: 27px;
     margin-bottom: 25px;
+   
   }
   
   
@@ -1175,6 +1188,6 @@ html, body {
       margin-left:0px;
       margin-top:0px;
       flex-direction: row;
-  }*/
+  }
   
 
