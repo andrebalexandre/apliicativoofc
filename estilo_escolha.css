@@ -1,42 +1,38 @@
 body
 {
-    
     font-family: "Audiowide", sans-serif;
     background-image: url("fundo4.jpg");
     overflow: hidden;
     margin: 0;
     padding: 0%;
-    width: 100%;
-    height: 100vh;
-
-   
-    
-   
-
+    width: 99%;
+    height: 99vh;
 }
 .principal
 {
-
-   
-   /* border-color: brown;*/
-    border-width: 5px;
     width: 100%;
     height: 99vh;
     display: flex;
     flex-direction: column;
-    position: relative;
-    top:0px;
-    left:0px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 }
-.logo
+.D1
 {
-    width: 80px;
-    z-index: 11;
-    position:absolute;
-    top:-5px;
-    left:30px;
+    width: 100%;
+    height: 32vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+     border-radius: 9px;
+     top:10px;
 }
-
 .D2
 {
     
@@ -50,28 +46,26 @@ body
 {
     /*background-color: brown;*/
     position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 190px;
-    top:10px;
+    width: 5%;
+    height: 9vh;
+    left: 170px;
+    top:9px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    justify-items: center;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
     cursor: pointer;
     border-radius: 40px;
-    z-index:10;
 
 }
 .D4
 {
     /*background-color: yellow;*/
     position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 590px;
+    width: 5%;
+    height: 9vh;
+    left: 300px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -80,16 +74,14 @@ body
     align-content: center;
     cursor: pointer;
     border-radius: 40px;
-    z-index:10;
-    
 }
 .D5
 {
     /*background-color: pink;*/
     position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 320px;
+    width: 5%;
+    height: 9vh;
+    left: 430px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -98,15 +90,14 @@ body
     align-content: center;
     cursor: pointer;
     border-radius: 40px;
-    z-index:10;
 }
 .D6
 {
     /*background-color: purple;*/
     position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 460px;
+    width: 5%;
+    height: 9vh;
+    left: 530px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -115,53 +106,48 @@ body
     align-content: center;
     cursor: pointer;
     border-radius: 40px;
-    z-index:10;
 }
 .D7
 {
-     /*background-color: purple;*/
-     position: absolute;
-     width: 150px;
-     height: 60px;
-     left: 1200px;
-     top:15px;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     align-items: center;
-     align-content: center;
-     cursor: pointer;
-     color: white;
-     margin-left: 5px;
-     z-index:10;
+    /*background-color: purple;*/
+    position: absolute;
+    width: 10%;
+    height: 8vh;
+    left: 900px;
+    top:15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    color: white;
     
 }
 .D8
 {
    /* background-color: yellow;*/
-   position: absolute;
-   width: 60px;
-   height: 60px;
-   left: 1350px;
-   top:9px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
-   align-content: center;
-   cursor: pointer;
-   border-radius: 60px;
-   color:white;
-   margin-left: 28px;
-   z-index:10;
+    position: absolute;
+    width: 5%;
+    height: 9vh;
+    left: 1090px;
+    top:9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 40px;
+    color:white;
 }
 .D9
 {
     /*background-color: yellow;*/
     position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 1500px;
+    width: 5%;
+    height: 9vh;
+    left: 1250px;
     top:9px;
     display: flex;
     flex-direction: row;
@@ -171,12 +157,24 @@ body
     justify-items: center;
     cursor: pointer;
     border-radius: 40px;
-    z-index:10;
+}
+.D10
+{
+    
+    position: relative;
+    top: 0px;
+    left:0px; 
+    width: 100%;
+    height: 30vh;
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    
 }
 .D12
 {
-   
-    width: 100%;
+    width: 110%;
     height: 82px;
     background-color: rgb(44, 119, 119);
     display: flex;
@@ -185,174 +183,392 @@ body
     align-items: center;
     align-content: center;
     justify-items: center;
-
-     top:0px;
-     
-    
-     
-
-   
-    
+    border-radius: 9px;
+    margin-top:-50px;
 }
-
-
 
 .D3:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D4:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D5:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D6:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
 
 }
 .D8:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+
 }
 .D9:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+
 }
-.produtos
+.D2:hover
 {
+    background-image: radial-gradient(rgb(220, 34, 62), rgba(44, 119, 119, 0.617) );
+
+}
+.D13
+{
+    position: relative;
+    background-color: purple;
+    top: -130px;
+    left:650px; 
+    width: 50%;
+    height: 15px;
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+.imagemcoxinha
+{
+   width: 90%;
+   height: 40vh;
+}
+.DES
+{
+    height: 100px;
+    width: 500px;
+    display: flex;
+    flex-direction:row;
+    /*background-color: black;*/
+    margin-left: 900px;
+}
+.DES0
+{
+    width: 180px;
+   height: 60px;
+   /*background-color: rgb(38, 101, 103);*/
+   display: flex;
+   border-radius: 20px;
+   justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin-left: 0px;
+    color: black;
+    
+
+}
+
+.DES1
+{
+    width: 180px;
+   height: 60px;
+   background-color: rgb(38, 101, 103);
+   display: flex;
+   border-radius: 20px;
+   justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin-left: 0px;
+    cursor: pointer;
+
+}
+.DES2
+{
+    width: 180px;
+   height: 60px;
+   background-color:rgb(38, 101, 103);
+   display: flex;
+   border-radius: 20px;
+   justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+a
+{
+    text-decoration: none;
+    color:white;
+}
+.DES1:hover
+{
+    background-color: black;
+
+}
+.DES2:hover
+{
+    background-color: black;
+
+}
+.propaganda
+{
+    height: 400px;
     width: 100%;
-    height: 65vh;
+    display: flex;
+    flex-direction:row;
+    /*background-color: white;*/
+    margin-left: 0px;
+}
+.linha1
+{
+    height: 300px;
+    width: 20%;
+    display: flex;
+    flex-direction:column;
+    /*background-color: red;*/
+    margin-left: 30px;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+}
+.fora
+{
+    font-family: 'Cookie';font-size: 22px;
+    width: 10px;
+    height: 10px;
+}
+.emoji
+{
+    width: 300px;
+   height: 60px;
+   /*background-color: rgb(38, 101, 103);*/
+   display: flex;
+   border-radius: 20px;
+   justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: row;
+}
+.linha2
+{
+    height: 300px;
+    width: 30%;
+    display: flex;
+    flex-direction:row;
+    /*background-color: yellow;*/
+    margin-left: 40px;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+}
+.infocoxinha
+{
+    height: 300px;
+    width: 350px;
+    display: flex;
+    flex-direction:column;
+    /*background-color: red;*/
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+}
+.precocoxinha
+{
+    width: 180px;
+    height: 40px;
+    background-color: rgb(38, 101, 103);
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin-left: 0px;
+    color:white
+}.linha3
+{
+    height: 320px;
+    width: 40%;
+    display: flex;
+    flex-direction:row;
+    /*background-color: yellow;/*/
+    margin-left: 70px;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+}
+.infotorta
+{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction:column;
+    /*background-color: red;*/
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    margin-left: -70px;
+    top:50px;
+}
+.precotorta
+{
+    width: 180px;
+    height: 40px;
+    background-color: rgb(38, 101, 103);
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin-left: 0px;
+    color:white
+}
+.logo
+{
+    width: 4%;
+    z-index: 11;
+    position:absolute;
+    top:3px;
+    left:20px;
+}
+
+.logoescrita
+{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 98px;
+    width: 1500px;
+    height: 70px;
+    top: 10px;
+    left: 100px;
+    margin-left: 1290px;
+}
+.produtosverde
+{
+    width: 85%;
+    height: 75vh;
+    margin-top: 30px;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center; 
     flex-direction: row;
     display: flex;
-    justify-content: space-around;
 }
-.pcoxinha
+.produtosbranco
 {
-    width: 20%;
-    height: 45vh;
+    background-color: rgba(255, 255, 255, 0.855);
+    width: 99%;
+    height: 73vh;
+    justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center; 
     flex-direction: column;
     display: flex;
-    margin-top: 800px;
-    
 }
-.pcoxinhaletras
+.produtostrans
 {
-    font-size: 35px;
-    margin-top: 20px;
-    top: 10px;
+    width: 96%;
+    height: 67vh;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: row;
+    display: flex;
 }
-.pselecione
+.traco
 {
-    width: 40%;
-    height: 70vh;
-    background-color: rgba(255, 255, 255, 0.808);
+    background-color: rgb(0, 0, 0);
+    width: 96%;
+    height: 2px;
+}
+.traco2
+{
+    background-color: rgb(0, 0, 0);
+    width: 96%;
+    height: 2px;
+}
+.COX
+{
+    margin-left: -900px;
+}
+.descricao
+{
+    width: 80%;
+    height: 60vh;
+    justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center; 
     flex-direction: column;
     display: flex;
-    margin-top: 800px;;
-   
-   
 }
-.pselecione2
+.des1
 {
-    font-family: "Freehand&family", sans-serif;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+    width: 80%;
+    height: 10vh;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    display: flex;
+    font-size: 25px;
 }
 .fieldcomidas
 {
-    margin-top: 20px;
+    border-width: 2px;
     border-style: solid;
-    border-width: 5px;
-    border-color: rgb(42, 131, 134);
-    width: 400px;
-    height: 410px;
-    border-radius: 20px;
-    font-family: "Audiowide", sans-serif;
-}  
-.fieldqtdd
-{
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgb(42, 131, 134);
-    width: 300px;
-    height: 35px;
-    border-radius: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    flex-direction: column;
-    display: flex;
-    
+    border-radius: 10px;
+    border-color: rgb(20, 94, 86);
+    width: 40%;
+    height: 50vh;  
 }
-.quantidades
+.selecionar
 {
-    width: 25%;
-    height: 30vh;
-    background-color: rgba(248, 242, 242, 0.808);
-    justify-items: center;
+    width: 99%;
+    height: 60vh;
+}
+.lembrete
+{
+    width: 99%;
+    height: 9vh;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 40px;
     justify-content: center;
+    justify-items: center;
     align-content: center;
     align-items: center; 
     display: flex;
-    flex-direction: column;
-    margin-top:800px;
-    
 }
-.qtdd
+.lembrete2
 {
-    font-size: 15px;
+    width: 55%;
+    height: 5vh;   
     font-family: "Audiowide", sans-serif;
-}
-.number
-{
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(42, 131, 134);
-    border-radius: 50px;
-}
-.addcarrinho
-{
-    background-color:rgba(48, 146, 150, 0.623); 
-    width: 60%;
-    height: 6vh;
-    color: white;
-    border-radius: 10px;
-    margin-left:50px
-}
-.preco
-{
-    width: 300px;
-    height: 70px;
-    background-color: rgba(0, 0, 0, 0.562);
+    font-size: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
     display: flex;
-    justify-content: space-around;
-     justify-items: flex-end;
-     align-content: center;
-     align-items: center; 
-     flex-direction: column;
-     color:white;
-     top:600px;
-    
-     
-   position: absolute;
-   bottom: 0px;
-
- }
- .imgcoxinha
- {
-
- }
+    margin-left: 20px;
+}
+.alerta
+{
+    width: 9%;
+    height: 5vh; 
+    font-size: 25px;
+    margin-left: 8px;
+}
