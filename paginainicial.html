@@ -167,10 +167,10 @@
                    
                 </div>
                 <div class="botaorelogio" id="botaorelogio">
-                    <img class="relogio" src="relogio.png" width="30px">
+                    <img onclick="animadorelogio();" class="relogio" src="relogio.png" width="30px">
                 </div>
                 <div class="botaoredes" id="botaoredes" >
-                    <img class="insta" src="insta.png" width="30px">
+                    <img onclick="animadoredes();" class="insta" src="insta.png" width="30px">
                 </div>
                 <div onclick="animado();" class="botaomenu">
                     <img class= "menu" src="menu.png" width="40px">
@@ -201,6 +201,7 @@
                 
                
                 <img CLASS="LOGOESTRELA" title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
+                <BR>
                 <B>NOS AVALIE:</B>
                 <DIV CLASS="ESTRELINHAS">
 
@@ -217,6 +218,29 @@
 
 
             </div>
+            <div class="atendimento" id="atendimento">
+                <img  title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
+                <BR>
+                <B>HORÁRIO DE ATENDIMENTO:</B>
+                <BR>
+                    <BR>
+                        <BR>
+                            <b>segunda a sexta:</b>
+                            <br>
+                             7:30 as 22:00
+                            <br>
+                            <b> sábados, domingos e feriados:</b>
+                            <br>
+                            8:00 as 14:00
+
+            </div>
+            <div class="sociais" id="sociais">
+                <img  title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
+             <BR>
+                <B>REDES SOCIAIS:</B>
+            </div>
+            
+        
 </div>
 
        
@@ -224,6 +248,10 @@
 </body>
 <script src="jquery.js"></script>
 <script>
+    function abrir(arquivo)
+    {
+        window.open(arquivo,"_blank")
+    }
    clicks=0
     function animado()
     {
@@ -264,6 +292,8 @@
     function animadoenvelope()
     {
         $("#avaliacao").animate({opacity:'0'},1000)
+        $("#atendimento").animate({opacity:'0'},1000)
+        
         
         clicks2=clicks2+1
       
@@ -287,6 +317,7 @@
     {
         
         $("#faleconosco").animate({opacity:'0'},1000)
+        $("#atendimento").animate({opacity:'0'},1000)
 
         clicks3=clicks3+1
       
@@ -300,6 +331,56 @@
         {
             clicks3=0
             $("#avaliacao").animate({opacity:'0'},1000)
+          
+
+        }
+
+    }
+    clicks4=0
+    function animadorelogio()
+    {
+        
+        $("#faleconosco").animate({opacity:'0'},1000)
+        $("#avaliacao").animate({opacity:'0'},1000)
+
+        clicks4=clicks4+1
+      
+        if (clicks4==1)
+        {
+          $("#atendimento").animate({opacity:'1'},1000)
+         
+
+        }
+        else 
+        {
+            clicks4=0
+            $("#atendimento").animate({opacity:'0'},1000)
+          
+
+        }
+
+    }
+    clicks5=0
+    function animadoredes()
+    {
+        
+        $("#faleconosco").animate({opacity:'0'},1000)
+        $("#avaliacao").animate({opacity:'0'},1000)
+        $("#atendimento").animate({opacity:'0'},1000)
+        
+
+        clicks5=clicks5+1
+      
+        if (clicks5==1)
+        {
+          $("#sociais").animate({opacity:'1'},1000)
+         
+
+        }
+        else 
+        {
+            clicks5=0
+            $("#sociais").animate({opacity:'0'},1000)
           
 
         }
@@ -355,5 +436,59 @@
         document.getElementById(meuId).src  = "avaliacao02.png" 
     }
   }
+  var btn = document.querySelector( '.btn' );
+
+
+var btnFront = btn.querySelector( '.btn-front' ),
+    btnYes = btn.querySelector( '.btn-back .yes' ),
+    btnNo = btn.querySelector( '.btn-back .no' );
+
+
+btnFront.addEventListener( 'click', function( event ) {
+  var mx = event.clientX - btn.offsetLeft,
+      my = event.clientY - btn.offsetTop;
+
+
+  var w = btn.offsetWidth,
+      h = btn.offsetHeight;
+ 
+  var directions = [
+    { id: 'top', x: w/2, y: 0 },
+    { id: 'right', x: w, y: h/2 },
+    { id: 'bottom', x: w/2, y: h },
+    { id: 'left', x: 0, y: h/2 }
+  ];
+ 
+  directions.sort( function( a, b ) {
+    return distance( mx, my, a.x, a.y ) - distance( mx, my, b.x, b.y );
+  } );
+ 
+  btn.setAttribute( 'data-direction', directions.shift().id );
+  btn.classList.add( 'is-open' );
+
+
+} );
+
+
+btnYes.addEventListener( 'click', function( event ) {
+  btn.classList.remove( 'is-open' );
+} );
+
+
+btnNo.addEventListener( 'click', function( event ) {
+  btn.classList.remove( 'is-open' );
+} );
+
+
+function distance( x1, y1, x2, y2 ) {
+  var dx = x1-x2;
+  var dy = y1-y2;
+  return Math.sqrt( dx*dx + dy*dy );
+}
+
+
+
+
+
 </script>
 </html>

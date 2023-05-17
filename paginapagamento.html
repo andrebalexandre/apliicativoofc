@@ -11,21 +11,10 @@
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
     <link rel="stylesheet" href="estilo_pagamento.css">
     <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <script src="jquery.js"></script>
 </head>
 <body>
-    <!DOCTYPE html>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina histórico</title>
-    <link rel="stylesheet" href="estilo_historico.css">
-    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Pinyon+Script&display=swap" rel="stylesheet">
     
-<body>
     <div class="principal">
         <div class="D12">
                 
@@ -147,9 +136,38 @@
                     <b>COXINHA</b>
                     <b>R$15,00</b>
                 </div>
+                <div class="btt">
+                    <button id="comprar" onclick="Comprar();" class="confirmaPAG">
+                        <b><span
+                    id="confirm">CONFIRMAR
+                </span></b>
+
+                  <img class="img_ok" id="img_ok" src="correto.png">
+                    </button>
+                </div>
+                
             </div>
-          
         
            
 </body>
+<script>
+    function Comprar()
+    {
+        $("#comprar").animate({height:"20px"}, 1000);
+        $("#confirm").animate({opacity:"0"}, 500);
+        $("#comprar").animate({width:"280px", borderRadius:"50px"}, 1000, Imagem);
+        $("#comprar").animate({height:"60px",width:"60px", borderRadius:"30px"}, 700);
+        comprar.style.backgroundSize="100%"
+        comprar.style.borderColor="white"
+    }
+    function Imagem()
+    {
+        $("#img_ok").animate({opacity:"1"}, 1000, Sair);
+    }
+    function Sair()
+    {
+        window.open("pedidoefetuado.html","_self");
+    }
+    
+</script>
 </html>

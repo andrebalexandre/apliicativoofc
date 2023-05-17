@@ -14,7 +14,7 @@ body
 }
 .principal
 {
-    /*border-color: brown;*/
+    border-color: brown;
     border-width: 5px;
     width: 100%;
     height: 99vh;
@@ -189,36 +189,37 @@ body
 
 .D3:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-color: black;
 
 }
 .D4:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-color: black;
 
 }
 .D5:hover
-{background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
-
+{
+    background-color: black;
 
 }
 .D6:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-color: black;
 
 }
 .D8:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-color: black; 
 
 }
 .D9:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    background-color: black;
+
 }
 .D2:hover
 {
-    background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
+    border-color: black;
 
 }
 .D13
@@ -373,9 +374,9 @@ a
 .pagtitulo
 {
     margin-top: 10vh;
-    margin-left: 105px;
+    margin-left: 91px;
     background-color: rgba(57, 143, 140, 0.906);
-    width: 18%;
+    width: 20%;
     height: 6vh;
     display: flex;
     align-content: center;
@@ -383,7 +384,7 @@ a
     justify-content: space-around;
     justify-items: center;
     font-size: 15px;
-    animation: backInLeft 3s;
+    animation: backInLeft 2s;
     color: rgb(255, 255, 255);
     border-color: rgba(253, 255, 255, 0.697);
     border-style: solid;
@@ -418,7 +419,7 @@ a
     border-color: rgb(25, 92, 92);
     border-style: solid;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .pagamento4
 {
@@ -442,18 +443,18 @@ a
 {
     background: rgba(32, 126, 133, 0.709);
     width: 25%;
-    height: 50vh;
+    height: 65vh;
     border-color: rgba(253, 255, 255, 0.697);
     border-style: solid;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: center;
     justify-items: center;
-    animation: fadeInLeft 2s;
-    margin-top: 12vh;
+    animation: fadeInLeft 2s forwards;
+    margin-top: 10vh;
 }
 .certo
     {
@@ -528,8 +529,10 @@ a
 }
 .preco
 {
-    width: 315px;
-    height: 70px;
+    width: 287px;
+    height: 51px;
+    margin-left: -13px;
+    margin-top: 56px;
     background-color: rgba(0, 0, 0, 0.562);
     display: flex;
     justify-content: space-around;
@@ -540,4 +543,38 @@ a
     color:white;
     position: absolute;
     bottom: 0px;
+}
+.confirmaPAG
+{
+    width: 60%;
+    height: 5vh;
+    background-color: #97f3ace4;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(21, 71, 64);
+    font-family: "Audiowide", sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+.btt
+{
+    width: 90%;
+    height: 9vh;
+    background-color:transparent;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+}
+.img_ok
+{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    width:54px; 
+    margin-left:1px;
+    margin-top:1px;
+    
 }
