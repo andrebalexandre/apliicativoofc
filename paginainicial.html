@@ -113,7 +113,7 @@
                                 <br>
                               <button onclick="abrir('paginadoces.html');" class="yes" >Doces</button >
                              
-                              <button class="no">Salgados</button>
+                              <button onclick="abrir2('paginasalgados.html');" class="no">Salgados</button>
                             </div>
                             <div class="btn-front">CARDÁPIO</div>
                           </div>
@@ -266,6 +266,10 @@
 <script src="jquery.js"></script>
 <script>
     function abrir(arquivo)
+    {
+        window.open(arquivo,"_blank")
+    }
+    function abrir2(arquivo)
     {
         window.open(arquivo,"_blank")
     }
