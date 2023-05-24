@@ -103,11 +103,11 @@
                         </div>
                     
                         <div class="btn">
-                            <div class="btn-back">
+                            <div class="btn-back" >
                               <div class="cardápio">
                                
                                 <img class="x"src="x.png" width="20px">
-                                <p>Deseja se direcionar para qual página?</p>
+                                <p id="bntp">Deseja se direcionar para qual página?</p>
                            </div>
                                 <br>
                                 <br>
@@ -213,18 +213,21 @@
                 <button  class="botao_enviarf" onclick="Enviar();">ENVIAR</button>
             <div  class="resposta" id="resposta">  </div>
 
-     </div>
+     </div> 
+     
+                
+     
             <div  class="avaliacao" id="avaliacao">
+                <img CLASS="LOGOESTRELA" title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
+                <p><B>NOS AVALIE:</B></p>
                 
                
-                <img CLASS="LOGOESTRELA" title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
-                <BR>
-                <B>NOS AVALIE:</B>
+
                 <DIV CLASS="ESTRELINHAS">
 
-                        <IMG onclick="ativaestrela('ESTRELINHA1');" CLASS="ESTRELINHA1"     id="ESTRELINHA1"      SRC="avaliacao01.png">
-                        <IMG onclick="ativaestrela('ESTRELINHA2');" CLASS="ESTRELINHA2" id="ESTRELINHA2"  SRC="avaliacao01.png">
-                        <IMG onclick="ativaestrela('ESTRELINHA3');" CLASS="ESTRELINHA3" id= "ESTRELINHA3"SRC="avaliacao01.png">
+                        <IMG onclick="ativaestrela('ESTRELINHA1');" CLASS="ESTRELINHA1" id="ESTRELINHA1" SRC="avaliacao01.png">
+                        <IMG onclick="ativaestrela('ESTRELINHA2');" CLASS="ESTRELINHA2" id="ESTRELINHA2" SRC="avaliacao01.png">
+                        <IMG onclick="ativaestrela('ESTRELINHA3');" CLASS="ESTRELINHA3" id="ESTRELINHA3" SRC="avaliacao01.png">
                         <IMG onclick="ativaestrela('ESTRELINHA4');" CLASS="ESTRELINHA4" id="ESTRELINHA4" SRC="avaliacao01.png">
                         <IMG onclick="ativaestrela('ESTRELINHA5');" CLASS="ESTRELINHA4" id="ESTRELINHA5" SRC="avaliacao01.png">
         
@@ -236,25 +239,24 @@
 
             </div>
             <div class="atendimento" id="atendimento">
-                <img  title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
+                <img class="logoatendimento" title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
                 <BR>
-                <B>HORÁRIO DE ATENDIMENTO:</B>
+                <p><B>HORÁRIO DE ATENDIMENTO:</B></p>
                 <BR>
-                    <BR>
                         <BR>
-                            <b>segunda a sexta:</b>
+                           <p><b>segunda a sexta:</b>
                             <br>
                              7:30 as 22:00
                             <br>
                             <b> sábados, domingos e feriados:</b>
                             <br>
-                            8:00 as 14:00
+                            8:00 as 14:00</p> 
 
             </div>
             <div class="sociais" id="sociais">
-                <img  title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
+                <img class="logoredes" title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
              <BR>
-                <B>REDES SOCIAIS:</B>
+                <p><B>REDES SOCIAIS:</B></p>
             </div>
             
         
@@ -312,46 +314,48 @@
     clicks2=0
     function animadoenvelope()
     {
-        $("#avaliacao").animate({opacity:'0'},1000)
-        $("#atendimento").animate({opacity:'0'},1000)
-        
+        $("#avaliacao").fadeOut(500)
+        $("#atendimento").fadeOut(500)
+     
         
         clicks2=clicks2+1
       
         if (clicks2==1)
         {
-          $("#faleconosco").animate({opacity:'1'},1000)
+          $("#faleconosco").fadeIn()
          
 
         }
         else 
         {
             clicks2=0
-            $("#faleconosco").animate({opacity:'0'},1000)
+            $("#faleconosco").fadeOut(500)
           
 
         }
 
     }
+   
     clicks3=0
     function animadoestrela()
     {
         
-        $("#faleconosco").animate({opacity:'0'},1000)
-        $("#atendimento").animate({opacity:'0'},1000)
+        $("#faleconosco").fadeOut(500)
+        $("#atendimento").fadeOut(500)
+        $("#sociais").fadeOut(500)
 
         clicks3=clicks3+1
       
         if (clicks3==1)
         {
-          $("#avaliacao").animate({opacity:'1'},1000)
+          $("#avaliacao").fadeIn()
          
 
         }
         else 
         {
             clicks3=0
-            $("#avaliacao").animate({opacity:'0'},1000)
+            $("#avaliacao").fadeOut(500)
           
 
         }
@@ -361,21 +365,21 @@
     function animadorelogio()
     {
         
-        $("#faleconosco").animate({opacity:'0'},1000)
-        $("#avaliacao").animate({opacity:'0'},1000)
-
+        $("#faleconosco").fadeOut(500)
+        $("#avaliacao").fadeOut(500)
+        $("#atendimento").fadeOut(500)
+        
         clicks4=clicks4+1
       
         if (clicks4==1)
         {
-          $("#atendimento").animate({opacity:'1'},1000)
-         
+          $("#atendimento").fadeIn()
 
         }
         else 
         {
             clicks4=0
-            $("#atendimento").animate({opacity:'0'},1000)
+            $("#atendimento").fadeOut(500)
           
 
         }
@@ -385,23 +389,23 @@
     function animadoredes()
     {
         
-        $("#faleconosco").animate({opacity:'0'},1000)
-        $("#avaliacao").animate({opacity:'0'},1000)
-        $("#atendimento").animate({opacity:'0'},1000)
+        $("#faleconosco").fadeOut(500)
+        $("#avaliacao").fadeOut(500)
+        $("#atendimento").fadeOut(500)
         
 
         clicks5=clicks5+1
       
         if (clicks5==1)
         {
-          $("#sociais").animate({opacity:'1'},1000)
+          $("#sociais").fadeIn()
          
 
         }
         else 
         {
             clicks5=0
-            $("#sociais").animate({opacity:'0'},1000)
+            $("#sociais").fadeOut(500)
           
 
         }
@@ -452,9 +456,79 @@
   function ativaestrela(meuId)
   {
     nome_imagem=document.getElementById(meuId).src
-    if(nome_imagem=="avaliacao01.png")
+    
+    if(nome_imagem.indexOf("avaliacao01")>=0)
     {
-        document.getElementById(meuId).src  = "avaliacao02.png" 
+        if(meuId.indexOf("1")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao02.png" 
+            
+        }else if(meuId.indexOf("2")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA2").src  = "avaliacao02.png" 
+             
+        }
+        else if(meuId.indexOf("3")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA2").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA3").src  = "avaliacao02.png" 
+        }
+        else if(meuId.indexOf("4")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA2").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA3").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA4").src  = "avaliacao02.png" 
+        }
+        else if(meuId.indexOf("5")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA2").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA3").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA4").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA5").src  = "avaliacao02.png" 
+        }
+    }
+    else{
+         if(meuId.indexOf("1")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA2").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA3").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA4").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA5").src  = "avaliacao01.png" 
+        }
+        else if(meuId.indexOf("2")>=0)
+        {
+             
+            document.getElementById("ESTRELINHA2").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA3").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA4").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA5").src  = "avaliacao01.png" 
+        }
+        else if(meuId.indexOf("3")>=0)
+        {
+             
+           
+            document.getElementById("ESTRELINHA3").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA4").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA5").src  = "avaliacao01.png" 
+        }
+        else if(meuId.indexOf("4")>=0)
+        {
+             
+            
+            document.getElementById("ESTRELINHA4").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA5").src  = "avaliacao01.png" 
+        }
+        else if(meuId.indexOf("5")>=0)
+        {
+             
+           
+            document.getElementById("ESTRELINHA5").src  = "avaliacao01.png" 
+        }
     }
    
   }
@@ -487,7 +561,7 @@ btnFront.addEventListener( 'click', function( event ) {
  
   btn.setAttribute( 'data-direction', directions.shift().id );
   btn.classList.add( 'is-open' );
-
+  bntp.style.opacity=1
 
 } );
 
