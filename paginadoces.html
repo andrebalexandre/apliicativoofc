@@ -168,6 +168,86 @@
                         <a href="paginaescolha.html" class="btn btn-white btn-        animate">Personalizar pedido</a>
                     </div>
                     </div>
+
+                    <div class="notificacao">
+                
+                        <div  class="botaoenvelope" id="botaoenvelope">
+                            <img onclick="animadoenvelope();" class= "envelope" src="envelope.png" width="30px">  
+                        </div>
+                        <div class="botaoestrela" id="botaoestrela">
+                            <img onclick="animadoestrela();" src="estrela.png"width="30px">
+                           
+                        </div>
+                        <div class="botaorelogio" id="botaorelogio">
+                            <img onclick="animadorelogio();" class="relogio" src="relogio.png" width="30px">
+                        </div>
+                        <div class="botaoredes" id="botaoredes" >
+                            <img onclick="animadoredes();" class="insta" src="insta.png" width="30px">
+                        </div>
+                        <div onclick="animado();" class="botaomenu">
+                            <img class= "menu" src="menu.png" width="40px">
+                        </div>
+        
+                        
+        
+                        
+                    </div>
+                    <div class="faleconosco" id="faleconosco">
+                        <div class="img">
+                            <a href="paginainicial.html">
+                              <img title="Ir Para Página Inicial"  src="cupcake.png" width="100px"> 
+                            </a>
+                        </div>
+                    <div class="titulo">
+                        FALE CONOSCO
+                    </div>
+                        <br>
+                        <br>
+                        <br>
+                     <input class="mensagemf" type="text" id="mensagemf"> 
+                        <button  class="botao_enviarf" onclick="Enviar();">ENVIAR</button>
+                    <div  class="resposta" id="resposta">  </div>
+                    div  class="avaliacao" id="avaliacao">
+                    <img CLASS="LOGOESTRELA" title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
+                    <p><B>NOS AVALIE:</B></p>
+                    
+                   
+    
+                    <DIV CLASS="ESTRELINHAS">
+    
+                            <IMG onclick="ativaestrela('ESTRELINHA1');" CLASS="ESTRELINHA1" id="ESTRELINHA1" SRC="avaliacao01.png">
+                            <IMG onclick="ativaestrela('ESTRELINHA2');" CLASS="ESTRELINHA2" id="ESTRELINHA2" SRC="avaliacao01.png">
+                            <IMG onclick="ativaestrela('ESTRELINHA3');" CLASS="ESTRELINHA3" id="ESTRELINHA3" SRC="avaliacao01.png">
+                            <IMG onclick="ativaestrela('ESTRELINHA4');" CLASS="ESTRELINHA4" id="ESTRELINHA4" SRC="avaliacao01.png">
+                            <IMG onclick="ativaestrela('ESTRELINHA5');" CLASS="ESTRELINHA4" id="ESTRELINHA5" SRC="avaliacao01.png">
+            
+                    </DIV>
+                    
+                        
+                    
+    
+    
+                </div>
+                <div class="atendimento" id="atendimento">
+                    <img class="logoatendimento" title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
+                    <BR>
+                    <p><B>HORÁRIO DE ATENDIMENTO:</B></p>
+                    <BR>
+                            <BR>
+                               <p><b>segunda a sexta:</b>
+                                <br>
+                                 7:30 as 22:00
+                                <br>
+                                <b> sábados, domingos e feriados:</b>
+                                <br>
+                                8:00 as 14:00</p> 
+    
+                </div>
+                <div class="sociais" id="sociais">
+                    <img class="logoredes" title="Ir Para Página Inicial"  src="cupcake.png" width="100px">
+                 <BR>
+                    <p><B>REDES SOCIAIS:</B></p>
+                </div>        
         
     </div>
     
@@ -202,7 +282,234 @@
         
 
         
+       
         
     }
+    clicks=0
+    function animado()
+    {
+        
+        clicks=clicks+1
+        if (clicks==1)
+        {
+            botaoenvelope.classList.remove("envelope2_recolher")
+            botaoestrela.classList.remove("estrela2_recolher")
+            botaorelogio.classList.remove("relogio2_recolher")
+            botaoredes.classList.remove("redes2_recolher")
+
+            botaoenvelope.classList.add("envelope2")
+            botaoestrela.classList.add("estrela2")
+            botaorelogio.classList.add("relogio2")
+            botaoredes.classList.add("redes2")
+        
+        }
+        else 
+        {
+            clicks=0
+            botaoenvelope.classList.remove("envelope2")
+            botaoestrela.classList.remove("estrela2")
+            botaorelogio.classList.remove("relogio2")
+            botaoredes.classList.remove("redes2")
+
+            botaoenvelope.classList.add("envelope2_recolher")
+            botaoestrela.classList.add("estrela2_recolher")
+            botaorelogio.classList.add("relogio2_recolher")
+            botaoredes.classList.add("redes2_recolher")
+        }
+
+        
+
+    }
+
+    clicks2=0
+    function animadoenvelope()
+    {
+        $("#avaliacao").fadeOut(500)
+        $("#atendimento").fadeOut(500)
+     
+        
+        clicks2=clicks2+1
+      
+        if (clicks2==1)
+        {
+          $("#faleconosco").fadeIn()
+         
+
+        }
+        else 
+        {
+            clicks2=0
+            $("#faleconosco").fadeOut(500)
+          
+
+        }
+
+    }
+   
+    clicks3=0
+    function animadoestrela()
+    {
+        
+        $("#faleconosco").fadeOut(500)
+        $("#atendimento").fadeOut(500)
+        $("#sociais").fadeOut(500)
+
+        clicks3=clicks3+1
+      
+        if (clicks3==1)
+        {
+          $("#avaliacao").fadeIn()
+         
+
+        }
+        else 
+        {
+            clicks3=0
+            $("#avaliacao").fadeOut(500)
+          
+
+        }
+
+    }
+    clicks4=0
+    function animadorelogio()
+    {
+        
+        $("#faleconosco").fadeOut(500)
+        $("#avaliacao").fadeOut(500)
+        $("#atendimento").fadeOut(500)
+        
+        clicks4=clicks4+1
+      
+        if (clicks4==1)
+        {
+          $("#atendimento").fadeIn()
+
+        }
+        else 
+        {
+            clicks4=0
+            $("#atendimento").fadeOut(500)
+          
+
+        }
+
+    }
+    clicks5=0
+    function animadoredes()
+    {
+        
+        $("#faleconosco").fadeOut(500)
+        $("#avaliacao").fadeOut(500)
+        $("#atendimento").fadeOut(500)
+        
+
+        clicks5=clicks5+1
+      
+        if (clicks5==1)
+        {
+          $("#sociais").fadeIn()
+         
+
+        }
+        else 
+        {
+            clicks5=0
+            $("#sociais").fadeOut(500)
+          
+
+        }
+
+    }
+    function Enviar()
+  {
+    texto = mensagemf.value;
+    texto= "SUPORTE: " + texto 
+
+    message = new Paho.MQTT.Message(texto);
+    message.destinationName = topico;
+    client.send(message);
+    mensagemf.value="";
+  }
+
+  function ativaestrela(meuId)
+  {
+    nome_imagem=document.getElementById(meuId).src
+    
+    if(nome_imagem.indexOf("avaliacao01")>=0)
+    {
+        if(meuId.indexOf("1")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao02.png" 
+            
+        }else if(meuId.indexOf("2")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA2").src  = "avaliacao02.png" 
+             
+        }
+        else if(meuId.indexOf("3")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA2").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA3").src  = "avaliacao02.png" 
+        }
+        else if(meuId.indexOf("4")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA2").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA3").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA4").src  = "avaliacao02.png" 
+        }
+        else if(meuId.indexOf("5")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA2").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA3").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA4").src  = "avaliacao02.png" 
+            document.getElementById("ESTRELINHA5").src  = "avaliacao02.png" 
+        }
+    }
+    else{
+         if(meuId.indexOf("1")>=0)
+        {
+            document.getElementById("ESTRELINHA1").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA2").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA3").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA4").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA5").src  = "avaliacao01.png" 
+        }
+        else if(meuId.indexOf("2")>=0)
+        {
+             
+            document.getElementById("ESTRELINHA2").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA3").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA4").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA5").src  = "avaliacao01.png" 
+        }
+        else if(meuId.indexOf("3")>=0)
+        {
+             
+           
+            document.getElementById("ESTRELINHA3").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA4").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA5").src  = "avaliacao01.png" 
+        }
+        else if(meuId.indexOf("4")>=0)
+        {
+             
+            
+            document.getElementById("ESTRELINHA4").src  = "avaliacao01.png" 
+            document.getElementById("ESTRELINHA5").src  = "avaliacao01.png" 
+        }
+        else if(meuId.indexOf("5")>=0)
+        {
+             
+           
+            document.getElementById("ESTRELINHA5").src  = "avaliacao01.png" 
+        }
+    }
+   
+  }
 </script>
 </html>

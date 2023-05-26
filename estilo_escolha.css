@@ -7,17 +7,12 @@ body
     padding: 0%;
     width: 99%;
     height: 99vh;
-}
-.principal
-{
-    width: 100%;
-    height: 99vh;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
+    display: flex;
 }
 .D1
 {
@@ -175,7 +170,7 @@ body
 .D12
 {
     width: 110%;
-    height: 82px;
+    height: 10vh;
     background-color: rgb(44, 119, 119);
     display: flex;
     flex-direction: row;
@@ -183,8 +178,6 @@ body
     align-items: center;
     align-content: center;
     justify-items: center;
-    border-radius: 9px;
-    margin-top:-50px;
 }
 
 .D3:hover
@@ -234,12 +227,6 @@ body
     display: flex;
     align-content: center;
     align-items: center;
-
-}
-.imagemcoxinha
-{
-   width: 90%;
-   height: 40vh;
 }
 .DES
 {
@@ -264,8 +251,6 @@ body
     flex-direction: column;
     margin-left: 0px;
     color: black;
-    
-
 }
 
 .DES1
@@ -314,126 +299,6 @@ a
     background-color: black;
 
 }
-.propaganda
-{
-    height: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction:row;
-    /*background-color: white;*/
-    margin-left: 0px;
-}
-.linha1
-{
-    height: 300px;
-    width: 20%;
-    display: flex;
-    flex-direction:column;
-    /*background-color: red;*/
-    margin-left: 30px;
-    justify-content: space-around;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-}
-.fora
-{
-    font-family: 'Cookie';font-size: 22px;
-    width: 10px;
-    height: 10px;
-}
-.emoji
-{
-    width: 300px;
-   height: 60px;
-   /*background-color: rgb(38, 101, 103);*/
-   display: flex;
-   border-radius: 20px;
-   justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-    flex-direction: row;
-}
-.linha2
-{
-    height: 300px;
-    width: 30%;
-    display: flex;
-    flex-direction:row;
-    /*background-color: yellow;*/
-    margin-left: 40px;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-}
-.infocoxinha
-{
-    height: 300px;
-    width: 350px;
-    display: flex;
-    flex-direction:column;
-    /*background-color: red;*/
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-}
-.precocoxinha
-{
-    width: 180px;
-    height: 40px;
-    background-color: rgb(38, 101, 103);
-    display: flex;
-    border-radius: 20px;
-    justify-content: space-around;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-    flex-direction: column;
-    margin-left: 0px;
-    color:white
-}.linha3
-{
-    height: 320px;
-    width: 40%;
-    display: flex;
-    flex-direction:row;
-    /*background-color: yellow;/*/
-    margin-left: 70px;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-}
-.infotorta
-{
-    height: 300px;
-    width: 400px;
-    display: flex;
-    flex-direction:column;
-    /*background-color: red;*/
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-    margin-left: -70px;
-    top:50px;
-}
-.precotorta
-{
-    width: 180px;
-    height: 40px;
-    background-color: rgb(38, 101, 103);
-    display: flex;
-    border-radius: 20px;
-    justify-content: space-around;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-    flex-direction: column;
-    margin-left: 0px;
-    color:white
-}
 .logo
 {
     width: 4%;
@@ -442,48 +307,55 @@ a
     top:3px;
     left:20px;
 }
-
-.logoescrita
+.principal
 {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 98px;
-    width: 1500px;
-    height: 70px;
-    top: 10px;
-    left: 100px;
-    margin-left: 1290px;
+    width: 100%;
+    height: 80vh;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
 }
 .produtosverde
 {
-    width: 85%;
-    height: 75vh;
-    margin-top: 30px;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center; 
-    flex-direction: row;
-    display: flex;
-    animation: zoomIn 2s;
-
-}
-.produtosbranco
-{
-    background-color: rgba(255, 255, 255, 0.855);
-    width: 99%;
-    height: 73vh;
+    background: rgba(245, 247, 248, 0.711);
+    border-color: rgb(25, 99, 99);
+    width: 25%;
+    height: 50vh;
+    margin-top: -15px;
+    border-radius: 15px;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center; 
     flex-direction: column;
     display: flex;
-    
 }
-.produtostrans
+.produtosverde2
 {
-    width: 96%;
-    height: 67vh;
+    height: 20vh;
+    width: 90%;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: row;
+    display: flex;   
+}
+.bordinha
+{
+    border-color: rgba(223, 227, 227, 0.801);
+    border-style: solid;
+    border-radius: 20px;
+}
+.produtosvermelho
+{
+    background: rgba(245, 247, 248, 0.711);
+    width:60%;
+    height:65vh;
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -491,6 +363,7 @@ a
     flex-direction: row;
     display: flex;
 }
+
 .traco
 {
     background-color: rgb(0, 0, 0);
@@ -507,6 +380,10 @@ a
 {
     margin-left: -900px;
 }
+.coxinha
+{
+    margin-top: 20px;
+}
 .descricao
 {
     width: 80%;
@@ -520,28 +397,66 @@ a
 }
 .des1
 {
-    width: 80%;
-    height: 10vh;
+    width: 30%;
+    height: 6vh;
+    font-size: 18px;
+    margin-left: 800px;
+    z-index: 10;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center; 
     display: flex;
-    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: backInLeft 2s;
+    color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.871);
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px   ;
+}
+.scr
+{
+    width: 100%;
+    height: 82vh;
+    margin-top: 40px;
+}
+.ok
+{
+    height: 5vh;
+    width: 100%;
+    font-size: 14px;
+    margin-left:5px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    display: flex;
+    background-color: #97f3ace4;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(21, 71, 64);
+    font-family: "Audiowide", sans-serif;
+    cursor: pointer;
 }
 .fieldcomidas
 {
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    border-color: rgb(20, 94, 86);
+    border-color: transparent;
     width: 40%;
-    height: 50vh;  
+    height: 50vh; 
+    font-size:20px;
+    margin-top: -100px; 
+    margin-left: -75px;
+    font-family: cursive;
 }
-.selecionar
+.fieldquantidades
 {
-    width: 99%;
-    height: 60vh;
+    border-color: transparent;
+    margin-left: 100px;
+    width: 100%;
 }
 .lembrete
 {
@@ -559,19 +474,97 @@ a
 {
     width: 55%;
     height: 5vh;   
-    font-family: "Audiowide", sans-serif;
     font-size: 10px;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center; 
     display: flex;
-    margin-left: 20px;
+    margin-left: 12px;
+    font-family: cursive;
 }
 .alerta
 {
     width: 9%;
     height: 5vh; 
     font-size: 25px;
-    margin-left: 8px;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+.qntdd
+{
+    width: 40%;
+    height: 50vh;
+    margin-left: 60px;
+    border-width: 1px;
+    margin-top: -45px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.observacao
+{
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-top: 50px;
+    width: 80%;
+    height: 20vh;
+}
+.obs
+{
+    width: 100%;
+    border-color: transparent;
+}
+.obss
+{
+    width: 100%;
+    height: 5vh;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; 
+    display: flex;
+}
+.numero
+{
+  width:180px;
+  height: 3vh;
+  margin-top: -100px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(20, 94, 86);
+  text-align: center;
+}
+.menos
+{
+    width:40px;
+    height: 4vh;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(20, 94, 86);
+    font-size:20px;
+}
+.mais
+{
+    width: 40px;
+    height: 4vh;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(20, 94, 86, 0.7);
+    font-size: 20px;
 }
