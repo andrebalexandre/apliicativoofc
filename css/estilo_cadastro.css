@@ -8,7 +8,7 @@ body
     justify-items: center;
     align-content: center;
     align-items: center;
-    background-image: url("img/fundo4.jpg");
+    background-image: url("../img/fundo4.jpg");
     overflow: hidden;
     font-family: "Audiowide", sans-serif;
 }

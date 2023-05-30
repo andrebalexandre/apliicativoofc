@@ -1,7 +1,7 @@
 body
 {
    
-    background-image: url("img/fundo4.jpg");
+    background-image: url("../img/fundo4.jpg");
     flex-direction: column;
     display: flex;
     justify-content: space-around;

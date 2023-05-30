@@ -1,7 +1,7 @@
 body
 {
     font-family: "Audiowide", sans-serif;
-    background-image: url("img/fundo4.jpg");
+    background-image: url("../img/fundo4.jpg");
     overflow: hidden;
     width: 99%;
     height: 99vh;
