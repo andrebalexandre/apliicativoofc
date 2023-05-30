@@ -22,26 +22,26 @@
                 
             <div class="D3">
                 <a href="paginainicial.html">
-                <img  title="Ver Página Inicial" src="../img/casinha.png" width="120px" height="60px"> 
+                <img  title="Ver Página Inicial" src="casinha.png" width="120px" height="60px"> 
                 </a> 
 
             </div>
             
              <div class="D5">
                 <a href="paginahistorico.html">
-                <img title="Ver Histórico" src="../img/lupa.png" width="35px" height="35px"> 
+                <img title="Ver Histórico" src="lupa.png" width="35px" height="35px"> 
                 </a> 
                 
              </div>
              <div class="D6">
                 <a href="paginaperfil.html">
-                <img  title="Ver Perfil" src="../img/perfil.png" width="70px" height="70px"> 
+                <img  title="Ver Perfil" src="perfil.png" width="70px" height="70px"> 
                 </a> 
                 
              </div>
              <div class="D4">
                 <a href="Paginalocalização.html">
-                <img  title="The Inclusive Bakery" src="../img/localização.png" width="40px" height="40px"> 
+                <img  title="Ver Localização" src="localização.png" width="40px" height="40px"> 
                 </a> 
                 
              </div>
@@ -50,25 +50,26 @@
             </div>
             <div class="D8">
                 <a href="paginacarrinho.html">
-                <img  title="Ver carrinho" src="../img/carrinho.png" width="130px" height="80px"> 
+                <img  title="Ver carrinho" src="carrinho.png" width="130px" height="80px"> 
                 </a>
             </div>
              <div class="D9">
-                <img src="../img/trespontos.png" width="280px" height="190px"> 
+                <img src="trespontos.png" width="280px" height="190px"> 
 
              </div>
              
             <div class="D11"></div>
   
-            <img class="logo" src="../img/novalogo.png">
+            <img class="logo" src="novalogo.png">
         </div>
             
           <div class="paggeral">
-            <div class="pagtitulo">
-                <b>EFETUE SEU PAGAMENTO AQUI:</b>
-            </div>
+            
             <div class="pagamento2">
                 <div class="pagamento3">
+                    <div class="pagtitulo">
+                        <b>EFETUE SEU PAGAMENTO AQUI:</b>
+                    </div><br>
                     <b class="valortotal" >O VALOR TOTAL DE SEU PEDIDO FOI: <br>
                          <span class="dinheiro"> <br> 25,99 </span></b>
                     <br><br>
@@ -111,43 +112,43 @@
                     </div>
             <div class="pagamento4">
                  <b> FORMA DE PAGAMENTO: </b>
-                <div class="cartao">
-                    <img src="../img/cartaocredito.png" width="10%">
-                    <div class="cartao2"> 
-                        <b>CARTÃO DE CRÉDITO   ></b> 
-                    </div>
+                
+             <button  id="abrir1" onclick="Abra1();" class="cartao">
+                    <img src="cartaocredito.png" width="10%">
+                <div class="cartao2"> 
+                        <b>CARTÃO DE CRÉDITO  ></b> 
                 </div>
-                <div class="boleto">
-                    <img src="../img/boleto.png" width="10%">
+            </button>
+
+            <button id="abrir2" onclick="Abra2();" class="boleto">
+                    <img src="boleto.png" width="10%">
                     <div class="boleto2"> 
                         <b>BOLETO BANCÁRIO   ></b> 
-                </div>
-                
-             </div>
-             <div class="pix">
-                <img src="../img/pix.png" width="10%">
+                    </div>
+            </button>
+            <button id="abrir3" onclick="Abra3();" class="pix">
+                <img src="pix.png" width="10%">
                     <div class="pix2"> 
                         <b>GERAR CÓDIGO PIX   ></b> 
              </div>
+            </button>
             </div>
             
-          </div>
+            
           <div class="pagamento5">
-                <img src="../img/imgcoxinha.png" width="85%">
+                <img src="imgcoxinha.png" width="85%">
                 <div class="preco">
                     <b>COXINHA</b>
                     <b>R$15,00</b>
                 </div>
                 <div class="btt">
-                    <a href="animaçãomoto.html">
-                        <button id="comprar" onclick="Comprar();"class="confirmaPAG"></button>
+                    <button id="comprar" onclick="Comprar();" class="confirmaPAG">
                         <b><span
-                            id="confirm">CONFIRMAR
-                        </span></b>
-                        <img class="img_ok" id="img/img_ok" src="correto.png">
+                    id="confirm">CONFIRMAR
+                </span></b>
+
+                  <img class="img_ok" id="img_ok" src="correto.png">
                     </button>
-                    
-                </a>
                 </div>
                 
             </div>
@@ -173,5 +174,25 @@
         window.open("pedidoefetuado.html","_self");
     }
     
+</script>
+<script>
+    function Abra1()
+    {
+        $("#abrir1").animate({height:"60%"}, 1000);
+        $("#abrir2").animate({height:"10%"}, 1000);
+        $("#abrir3").animate({height:"10%"}, 1000);
+    }
+    function Abra2()
+    {
+        $("#abrir2").animate({height:"40%"}, 1000);
+        $("#abrir1").animate({height:"10%"}, 1000);
+        $("#abrir3").animate({height:"10%"}, 1000);
+    }
+    function Abra3()
+    {
+        $("#abrir3").animate({height:"40%"}, 1000);
+        $("#abrir2").animate({height:"10%"}, 1000);
+        $("#abrir1").animate({height:"10%"}, 1000);
+    }
 </script>
 </html>
