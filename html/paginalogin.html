@@ -19,22 +19,21 @@
             <img class="logo" src="../img/novalogo.png" width="180px">
             <h1>FAÇA SEU LOGIN:</h1>
     
-     <fieldset class="fieldset1">
-            <legend><b>EMAIL:</b> </legend>
-            <input class="caixa" type="text">
-     </fieldset>
-            <br> 
-    <fieldset class="fieldset1">
+     <form action="verifica.php" method="post">
+                <fieldset class="fieldset1">
+                <legend><b>EMAIL:</b> </legend>
+                <input class="caixa" type="email" name="login">
+            </fieldset>
+                <br> 
+            <fieldset class="fieldset1">
             <legend> <b>SENHA:</b></legend>
-            <input class="caixa" type="password">
-    </fieldset>
+            <input class="caixa" type="password" name="senha">
+            </fieldset>
+            <button type="submit">ENTRAR</button>
+    </form>
     <br>
         <div class="D3">
-            <button class="botao">
-            <a href="paginainicial.html">
-            <b>ENTRAR</b> 
-             </a>
-            </button>
+        
              <button class="botao">
                 <a href="paginacadastro.html">
                 <b>CADASTRAR-SE</b>
