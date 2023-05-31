@@ -2,7 +2,8 @@
 
     $login = $_POST["login"]; //pega o input
     $senha = $_POST["senha"];
-
+echo($login);
+echo($senha);
     include("conecta.php"); //conecta com o banco de dados
 
         $comando = $pdo->prepare("SELECT * FROM usuarios where login= '$login' and senha= '$senha' ");
@@ -19,7 +20,7 @@
 
         if($n ==0)
         {
-            header("Location: index.html");
+           // header("Location: index.html");
         }
         if($n ==1)
         {
@@ -29,7 +30,7 @@
         }
         else
         {
-            header("Location: usuario.html");
+            header("Location: html/paginainicial.html");
         }
 
         }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="Website Icon" type="png"
+    href="img/minilogo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINACADASTRO</title>
+    <link rel="stylesheet" href="../css/estilo_cadastro.css">
+    
+</head>
+<body>
+    <form action="../cadastrar.php" method="post">
+        <div class="d1">
+      <div class="cadastro">
+        <img class="logo" src="../img/novalogo.png"  width="170px" >
+        <br> <br> 
+        <b class="letrascadastro">FAÇA SEU LOGIN:</b>
+        <br> <br>
+        <div class="bordacad">
+            
+            <fieldset class="fieldset1">
+                 <legend><b>EMAIL</b> </legend>
+                 <input type="email" name="email">
+            </fieldset>
+            <fieldset class="fieldset1">
+                <legend> <b>SENHA</b></legend>
+                <input type="password" name="senha">
+            </fieldset>
+        </div>
+       
+            <button class="botao2" type="submit" name="cadastrar">CADASTRAR</button>
+        
+        </div>
+      <div class="dPessoais">
+        <b class="letraspessoais"> DADOS PESSOAIS:</b>
+        <fieldset class="fieldset2">
+            <legend><b> NOME </b> </legend>
+            <input type="text" name="nome">
+       </fieldset>
+       <fieldset class="fieldset2">
+           <legend> <b>CPF</b></legend>
+           <input type="text" name="cpf">
+        </fieldset>
+        <fieldset class="fieldset2">
+           <legend><b>TELEFONE</b> </legend>
+            <input type="text" name="telefone">
+       </fieldset>
+       <fieldset class="fieldset2">
+           <legend> <b>DATA DE NASCIMENTO</b></legend>
+           <input type="date" name="aniversario">
+       </fieldset>
+      </div>
+
+      <div class="dProfissionais">
+        <b class="letraspessoais"> DADOS DO ENDEREÇO:</b>
+        <fieldset class="fieldset3">
+            <legend><b> CEP </b> </legend>
+            <input type="text" name="cep">
+       </fieldset>
+       <fieldset class="fieldset3">
+           <legend> <b>ESTADO</b></legend>
+           <input type="text"name="estado">
+        </fieldset>
+        <fieldset class="fieldset3">
+           <legend><b>CIDADE</b> </legend>
+            <input type="text" name="cidade">
+       </fieldset>
+       <fieldset class="fieldset3">
+           <legend> <b>BAIRRO/LOUGRADORO</b></legend>
+           <input type="text" name="bairro">
+       </fieldset>
+       <fieldset class="fieldset3">
+        <legend> <b>NÚMERO</b></legend>
+        <input type="number" name="numero">
+    </fieldset>
+    <fieldset class="fieldset3">
+        <legend> <b>COMPLEMENTO</b></legend>
+        <input type="text" name="complemento">
+    </fieldset>
+      </div>
+    </div>
+</form>
+</body>
+</html>
