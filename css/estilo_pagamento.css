@@ -328,9 +328,9 @@ a
 
 .preco
 {
-    top: 235px;
-    width:240px;
-    height: 90px;
+    top: 213px;
+    width:10px;
+    height: 70px;
     background-color: rgba(0, 0, 0, 0.562);
     display: flex;
     justify-content: space-around;
@@ -339,7 +339,7 @@ a
      align-items: center; 
      flex-direction: column;
     color:white;
-    position: relative;
+    position: absolute;
     bottom: 0px;
 }
 .botaodeslizar
@@ -538,8 +538,8 @@ a
 .preco
 {
     width: 287px;
-    height: 51px;
-    margin-left: -13px;
+    height: 61px;
+    margin-left: 1px;
     margin-top: 113px;
     background-color: rgba(0, 0, 0, 0.562);
     display: flex;
