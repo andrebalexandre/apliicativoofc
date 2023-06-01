@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 include("conecta.php");
 
@@ -22,8 +22,8 @@ if(isset($_POST["cadastrar"])) {
     $resultado = $comando->execute();
     header("Location: html/paginalogin.html");
 }
-=======
-<?php
+
+
 include("conecta.php");
 
 $nome = $_POST["nome"];
@@ -46,5 +46,3 @@ if(isset($_POST["cadastrar"])) {
     $resultado = $comando->execute();
     header("Location: html/paginalogin.html");
 }
->>>>>>> d8065ad399ce9cae676ea2012c0a5b29f8914750
-?>
