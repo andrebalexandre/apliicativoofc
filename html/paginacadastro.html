@@ -12,29 +12,33 @@
     
 </head>
 <body>
-    <div class="d1">
+    <form action="../cadastrar.php" method="post">
+        <div class="d1">
       <div class="cadastro">
         <img class="logo" src="../img/novalogo.png"  width="170px" >
         <br> <br> 
         <b class="letrascadastro">FAÇA SEU LOGIN:</b>
         <br> <br>
         <div class="bordacad">
+            
             <fieldset class="fieldset1">
+<<<<<<< HEAD
+                 <legend><b>EMAIL</b> </legend>
+                 <input type="email" name="email">
+=======
                  <legend><b>LOGIN</b> </legend>
                  <input type="email" name="login">
+>>>>>>> d8065ad399ce9cae676ea2012c0a5b29f8914750
             </fieldset>
             <fieldset class="fieldset1">
                 <legend> <b>SENHA</b></legend>
                 <input type="password" name="senha">
             </fieldset>
         </div>
-        <div class="botao">
-            <a href="paginainicial.html">
-                <b>ENTRAR</b>
-                </a> 
-           
+       
+            <button class="botao2" type="submit" name="cadastrar">CADASTRAR</button>
+        
         </div>
-    </div>
       <div class="dPessoais">
         <b class="letraspessoais"> DADOS PESSOAIS:</b>
         <fieldset class="fieldset2">
@@ -83,5 +87,6 @@
     </fieldset>
       </div>
     </div>
+</form>
 </body>
 </html>
