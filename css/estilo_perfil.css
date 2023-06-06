@@ -229,183 +229,51 @@ body
     background-image:radial-gradient(rgba(255, 255, 255, 0.589),rgba(44, 119, 119, 0.617));
 
 }
-.D13
+.fotoperfil
 {
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    background-color: rgba(44, 119, 119, 0.525);
     position: relative;
-    background-color: purple;
-    top: -130px;
-    left:650px; 
-    width: 50%;
-    height: 15px;
-    flex-direction: column;
     display: flex;
-    align-content: center;
-    align-items: center;
-
-}
-.logoescrita
-{
-    font-family: "Pinyon Script" ;
-    font-size: 98px;
-    width:1500px;
-    height: 500px;
-    top: 100px;
-    margin-left: 650px;
-    z-index: 13px;
-    margin-top:-130px ;
-    
-    
-
-}
-/* {
-    position: absolute;
-    top: 300px;
-    left:80px; 
-    background-color: black;
-    width: 500px;
-    height: 500px;
-}
-/*.imagemcoxinha
-{
-    position: absolute;
-    top: 300px;
-    left:80px;
-    width: 1000px;
-    height: 500px;
-
-}*/
-
-
-
-
-a
-{
-    text-decoration: none;
-    color:white;
-}
-
-.propaganda
-{
-    /*background-color: red;*/
-    height: 400px;
-    width:100%;
-    display: flex;
-    flex-direction:row;
-    top: 140px;
-    position: relative;
-
-
-   
-
-}
-
-.todas
-{
-    display: flex;
-    flex-direction: row;
-    margin-left: 0px;
-    animation: deslizar 2s;
-    width: 400px;
-    
-}
-
-.img_legenda
-{
-    position: relative;
-   
-    width: 300px;
-    height: 358px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-items: center;
     align-items: center;
     align-content: center;
-    margin-left: 50px;
-    margin-top: 120px;
-    background-color: rgba(50, 102, 94, 0.589);
-}
-.carrossel
-{
-    height: 500px;
-    width: 500%;
-    display: flex;
-    flex-direction:row;
-    /*background-color: yellow;*/
+    justify-content: center;
     justify-items: center;
+    margin-top:40px;
+    margin-left: 1300px;
+}
+.letraperfil
+{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    background-color: rgb(44, 119, 119);
+    font-size: 140px;
+    align-items: center;
     align-content: center;
-    align-items: center; 
-    margin-top:230px ;
-    margin-left: 15px;
-    overflow: hidden;
-   
-    
-
-}
-
-.teste
-{
-     animation: deslizar2 5s forwards;
-
-}
-
-@keyframes deslizar2
-{
- 0%{margin-left:40px; }
- 100% {margin-left:-600px;}
-}
-.teste2
-{
-     animation: deslizar3 5s forwards;
-
-}
-
-@keyframes deslizar3
-{
- 0%{margin-left:-600px; }
- 100% {margin-left:40px;}
-}
-
-
-
-
-
-.preco
-{
-    width: 250px;
-    height: 70px;
-    background-color: rgba(0, 0, 0, 0.562);
+    justify-content: center;
+    justify-items: center;
     display: flex;
-    justify-content: space-around;
-     justify-items: flex-end;
-     align-content: center;
-     align-items: center; 
-     flex-direction: column;
-     color:white;
-    TOP:270PX;
-    position: absolute;
-     bottom: 0px;
+    margin-top: -15px;;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 
 }
-.botaodeslizar
+.dados
 {
-    position:absolute;
-    width: 60px;
-    height: 60px;
-    right: 30px;
-    top:745px;
-    z-index: 10;
-    
+    width: 1200px;
+    height: 640px;
+    background-color: rgba(255, 255, 255, 0.692);
+    margin-top:-200px;
+    margin-left: 80px;
 }
-.botaodeslizar2
+.nome
 {
-  
-    position:absolute;
-    width: 60px;
+    width: 600px;
     height: 60px;
-    right: 1480px;
-    top:740px;
-    z-index: 10;
-
+    margin-top:20px;
+    margin-left: 600px;
+    background-color: rgba(44, 119, 119, 0.803);
 }
-

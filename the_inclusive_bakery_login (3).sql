@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Jun-2023 às 15:22
+-- Tempo de geração: 06-Jun-2023 às 17:19
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -58,16 +58,17 @@ CREATE TABLE `cadastro` (
   `cidade` varchar(45) NOT NULL,
   `bairro` varchar(45) NOT NULL,
   `numero` int(11) NOT NULL,
-  `complemento` varchar(45) NOT NULL
+  `complemento` varchar(45) NOT NULL,
+  `admin` varchar(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `cadastro`
 --
 
-INSERT INTO `cadastro` (`email`, `senha`, `nome`, `cpf`, `telefone`, `aniversario`, `cep`, `estado`, `cidade`, `bairro`, `numero`, `complemento`) VALUES
-('eve@gmail', '182', 'evelin solange dos navegantes', '122.797.629', '(47) 99226-0467', '2006-02-18', '89230400', 'sc', 'joinville', 'fátima', 1797, 'apt 101'),
-('eve@gmail', '182', 'evelin solange dos navegantes', '122.797.629', '(47) 99226-0467', '2006-02-18', '89230400', 'sc', 'joinville', 'fátima', 1797, 'apt 101');
+INSERT INTO `cadastro` (`email`, `senha`, `nome`, `cpf`, `telefone`, `aniversario`, `cep`, `estado`, `cidade`, `bairro`, `numero`, `complemento`, `admin`) VALUES
+('kauamira@gmail', '2512', 'Kauã Henrique ', '15818913937', '(47)99104-7342', '2005-12-25', '89211460', 'sc', 'joinville', 'Floresta', 1044, '2:305', 'n'),
+('eve@gmail', '182', 'evelin solange dos navegantes', '122.797.629', '(47) 99226-0467', '2006-02-18', '89230400', 'sc', 'joinville', 'fátima', 1797, 'apt 101', 'n');
 
 -- --------------------------------------------------------
 
@@ -87,7 +88,8 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`login`, `senha`, `admin`) VALUES
 ('amandaraasch38@gmail', '257', 's'),
-('andrealexandre@gmail', '298', 'n');
+('andrealexandre@gmail', '298', 'n'),
+('eve@gmail', '182', 'n');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

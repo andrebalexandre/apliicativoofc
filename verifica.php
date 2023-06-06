@@ -27,10 +27,14 @@ echo($senha);
         {
             if($admin== "s")
         {
+            session_start();
+            $_SESSION["logado"] = $login;
             header("Location: html/pedidospendentes_adm.html");
         }
         else
         {
+            session_start();
+            $_SESSION["logado"] = $login;
             header("Location: html/paginainicial.html");
         }
 
