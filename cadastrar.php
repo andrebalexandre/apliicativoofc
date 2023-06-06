@@ -20,6 +20,8 @@ $senha    = $_POST["senha"];
 if(isset($_POST["cadastrar"])) {
     $comando = $pdo->prepare("INSERT INTO cadastro VALUES('$email','$senha','$nome','$cpf','$telefone','$aniversario','$cep','$estado','$cidade','$bairro',$numero,'$complemento','n')");
     $resultado = $comando->execute();
+    $comando = $pdo->prepare("INSERT INTO usuarios VALUES('$email','$senha','n')");
+    $resultado = $comando->execute();
     header("Location: html/paginalogin.html");
 }
 

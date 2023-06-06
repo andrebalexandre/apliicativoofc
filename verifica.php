@@ -16,6 +16,7 @@ echo($senha);
         {
             $n = 1;
             $admin = $linhas["admin"];
+            echo("entrei aqui");
         }
 
         if($n ==0)
@@ -35,5 +36,5 @@ echo($senha);
 
         }
 
-
+echo($admin);
 ?>
