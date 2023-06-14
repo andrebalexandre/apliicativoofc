@@ -25,6 +25,7 @@ body
  color: white;
  font-family: "Audiowide", sans-serif;
  cursor: pointer;
+ 
 }
 .ME:hover
 {
@@ -47,8 +48,6 @@ body
     background-color: rgba(255, 255, 255, 0.708);
     width: 80%;
     height: 75vh;
-    justify-content: center;
-    justify-items: center;
     align-items: center;
     align-content: center;
     flex-direction: column;
@@ -56,12 +55,13 @@ body
     border-radius: 8px;
     font-family: "Audiowide", sans-serif;
     font-size: 25px;
+    overflow-y: scroll;
 }
 .verde
 {
     color: rgb(21, 78, 84);
     font-size: 18px;
-    font-family: "Audiowide", sans-serif;
+    font-family: cursive;
 }
 table 
 {
@@ -81,4 +81,8 @@ td
 table, th, td 
 {
     border: 1px solid;
+}
+.excluir
+{
+
 }

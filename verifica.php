@@ -29,7 +29,7 @@ echo($senha);
         {
             session_start();
             $_SESSION["logado"] = $login;
-            header("Location: html/pedidospendentes_adm.html");
+            header("Location: pedidospendentes_adm.php");
         }
         else
         {
