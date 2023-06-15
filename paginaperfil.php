@@ -60,6 +60,11 @@
              
             <img class="logo" src="img/cupcake.png"   >  
         </div>
+        
+
+            
+        </div>
+        <div class="dados">
         <div class="fotoperfil">
             <div class="letraperfil">
                 <?php
@@ -70,11 +75,8 @@
                 ?>
                 
             </div>
-
-            
-        </div>
-        <div class="dados">
             <div class="nome"></div>
+          <div class="dados2"></div>
         </div>
      
 
