@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Jun-2023 às 17:19
+-- Tempo de geração: 15-Jun-2023 às 14:44
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -68,7 +68,9 @@ CREATE TABLE `cadastro` (
 
 INSERT INTO `cadastro` (`email`, `senha`, `nome`, `cpf`, `telefone`, `aniversario`, `cep`, `estado`, `cidade`, `bairro`, `numero`, `complemento`, `admin`) VALUES
 ('kauamira@gmail', '2512', 'Kauã Henrique ', '15818913937', '(47)99104-7342', '2005-12-25', '89211460', 'sc', 'joinville', 'Floresta', 1044, '2:305', 'n'),
-('eve@gmail', '182', 'evelin solange dos navegantes', '122.797.629', '(47) 99226-0467', '2006-02-18', '89230400', 'sc', 'joinville', 'fátima', 1797, 'apt 101', 'n');
+('eve@gmail', '182', 'evelin solange dos navegantes', '122.797.629', '(47) 99226-0467', '2006-02-18', '89230400', 'sc', 'joinville', 'fátima', 1797, 'apt 101', 'n'),
+('maicol@prof.com', '788', 'Maicol Prof', '', '', '2023-06-14', '89230-400', 'SC', 'Joinville', 'América', 555, 'casa', 'n'),
+('gustavo@gmail.com', '555', 'Gustavo ', '444.555.666', '(47)98885-9678', '2000-08-04', '89211-450', 'SC', 'Joinville', 'Guanabara', 289, 'casa', 'n');
 
 -- --------------------------------------------------------
 
@@ -89,7 +91,9 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`login`, `senha`, `admin`) VALUES
 ('amandaraasch38@gmail', '257', 's'),
 ('andrealexandre@gmail', '298', 'n'),
-('eve@gmail', '182', 'n');
+('eve@gmail', '182', 'n'),
+('maicol@prof.com', '788', 'n'),
+('gustavo@gmail.com', '555', 'n');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

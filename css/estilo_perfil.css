@@ -231,8 +231,8 @@ body
 }
 .fotoperfil
 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius:50%;
     background-color: rgba(44, 119, 119, 0.525);
     position: relative;
@@ -241,16 +241,17 @@ body
     align-content: center;
     justify-content: center;
     justify-items: center;
-    margin-top:40px;
-    margin-left: 1300px;
+   top: 20px;
+   left:40px;
+    
 }
 .letraperfil
 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius:50%;
     background-color: rgb(44, 119, 119);
-    font-size: 140px;
+    font-size: 120px;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -266,14 +267,27 @@ body
     width: 1200px;
     height: 640px;
     background-color: rgba(255, 255, 255, 0.692);
-    margin-top:-200px;
-    margin-left: 80px;
+    margin-top:-660px;
+    margin-left: 170px;
+}
+.dados2
+{
+    width: 1100px;
+    height: 440px;
+    background-color: black;
+    margin-top:600px;
+    z-index: 1;
+    position: absolute;
+    margin-left:950px ;
+   
 }
 .nome
 {
-    width: 600px;
+    width: 700px;
     height: 60px;
-    margin-top:20px;
-    margin-left: 600px;
-    background-color: rgba(44, 119, 119, 0.803);
+    z-index: 2;
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 0px;
+    background-color: rgba(44, 119, 119, 0.895);
 }
