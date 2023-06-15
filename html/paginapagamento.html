@@ -114,22 +114,33 @@
                  <b> FORMA DE PAGAMENTO: </b>
                 
              <button  id="abrir1" onclick="Abra1();" class="cartao">
-                    <img src="../img/cartaocredito.png" width="10%">
+                
                 <div class="cartao2"> 
-                        <b>CARTÃO DE CRÉDITO  ></b> 
+                        <b>CARTÃO DE CRÉDITO</b> 
+                        <img src="../img/cartaocredito.png" width="10%">
+                        <div class="dados1" id="dados1">
+                            LLLLL
+                        </div>
                 </div>
             </button>
 
             <button id="abrir2" onclick="Abra2();" class="boleto">
-                    <img src="../img/boleto.png" width="10%">
+        
                     <div class="boleto2"> 
-                        <b>BOLETO BANCÁRIO   ></b> 
+                        <img src="../img/boleto.png" width="10%">
+                        <b>BOLETO BANCÁRIO ></b>
                     </div>
+                    <div class="dados2" id="dados2">
+                        <b>SEU CÓDIGO PARA PAGAMENTO:</b>
+                        <span class="cod"> 0948219478356823 </span>
+                    </div> 
             </button>
             <button id="abrir3" onclick="Abra3();" class="pix">
-                <img src="../img/pix.png" width="10%">
+                
                     <div class="pix2"> 
+                        <img src="../img/pix.png" width="10%">
                         <b>GERAR CÓDIGO PIX   ></b> 
+                        <div class="dados"></div>
              </div>
             </button>
             </div>
@@ -181,12 +192,18 @@
         $("#abrir1").animate({height:"60%"}, 1000);
         $("#abrir2").animate({height:"10%"}, 1000);
         $("#abrir3").animate({height:"10%"}, 1000);
+        $("#dados1").animate({height:"40%"}, 1000);
+        document.getElementById("dados1").style.display="flex"; 
+        document.getElementById("dados2").style.display="none"; 
+
     }
     function Abra2()
     {
         $("#abrir2").animate({height:"40%"}, 1000);
         $("#abrir1").animate({height:"10%"}, 1000);
         $("#abrir3").animate({height:"10%"}, 1000);
+        $("#dados2").animate({height:"40%"}, 1000);
+        
     }
     function Abra3()
     {
