@@ -500,7 +500,7 @@ a
     border-style: solid;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
@@ -584,6 +584,39 @@ a
     width:54px; 
     margin-left:1px;
     margin-top:1px;  
+}
+.dados1
+{
+    background-color:rgba(255, 255, 255, 0.742);
+    height: 0px;
+    width: 98%;
+    font-size: 15px;
+    display:none;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+    flex-direction: column;
+    border-radius: 15px;  
+}
+.dados2
+{
+    background-color:rgba(255, 255, 255, 0.742);
+    height: 0px;
+    width: 98%;
+    font-size: 15px;
+    display:none;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+    flex-direction: column;
+    border-radius: 15px;
+}
+.cod
+{
+    margin-top: 20px;
+    font-size: cursive;
 }
 
   
