@@ -111,38 +111,59 @@
                     
                     </div>
             <div class="pagamento4">
-                 <b> FORMA DE PAGAMENTO: </b>
-                
-             <button  id="abrir1" onclick="Abra1();" class="cartao">
-                
-                <div class="cartao2"> 
-                        <b>CARTÃO DE CRÉDITO</b> 
-                        <img src="../img/cartaocredito.png" width="10%">
-                        <div class="dados1" id="dados1">
-                            LLLLL
-                        </div>
-                </div>
-            </button>
-
-            <button id="abrir2" onclick="Abra2();" class="boleto">
-        
-                    <div class="boleto2"> 
-                        <img src="../img/boleto.png" width="10%">
-                        <b>BOLETO BANCÁRIO ></b>
+                    <b> FORMA DE PAGAMENTO: </b>
+                    
+                <button  id="abrir1" onclick="Abra1();" class="cartao">
+                    
+                    <div class="cartao2"> 
+                            <b>CARTÃO DE CRÉDITO</b> 
+                            <img src="../img/cartaocredito.png" width="10%">
                     </div>
-                    <div class="dados2" id="dados2">
-                        <b>SEU CÓDIGO PARA PAGAMENTO:</b>
-                        <span class="cod"> 0948219478356823 </span>
-                    </div> 
-            </button>
-            <button id="abrir3" onclick="Abra3();" class="pix">
-                
-                    <div class="pix2"> 
-                        <img src="../img/pix.png" width="10%">
-                        <b>GERAR CÓDIGO PIX   ></b> 
-                        <div class="dados"></div>
-             </div>
-            </button>
+                    <div class="dados1" id="dados1">
+                        <fieldset class="fildinho">
+                            <legend> <b>N° DO CARTÃO:</b></legend>
+                            <input class="caixinha" type="text">
+                        </fieldset><br>
+                        <fieldset class="fildinho">
+                            <legend> <b>NOME COMPLETO:</b></legend>
+                            <input class="caixinha" type="text">
+                        </fieldset><br>
+                        <div class="repartir">
+                            <fieldset class="fildinho">
+                                <legend> <b>VALIDADE:</b></legend>
+                                <input class="caixinha1" type="date">
+                            </fieldset>
+                            <fieldset class="fildinho"><br>
+                                <legend> <b>CVC:</b></legend>
+                                <input class="caixinha" type="number">
+                            </fieldset>
+                        </div>
+                    </div>
+                </button>
+
+                <button id="abrir2" onclick="Abra2();" class="boleto">
+            
+                        <div class="boleto2"> 
+                            <img src="../img/boleto.png" width="10%">
+                            <b>BOLETO BANCÁRIO ></b>
+                        </div>
+                        <div class="dados2" id="dados2">
+                            <b>SEU CÓDIGO PARA PAGAMENTO:</b>
+                            <span class="cod"> 0948219478356823 </span>
+                        </div>
+                         
+                </button>
+                <button id="abrir3" onclick="Abra3();" class="pix">
+                    
+                        <div class="pix2"> 
+                            <img src="../img/pix.png" width="10%">
+                            <b>GERAR CÓDIGO PIX   ></b> 
+                        </div>
+                        <div class="dados3" id="dados3">
+                            <b>SEU CÓDIGO PARA PAGAMENTO:</b>
+                            <span class="cod"> 09481587416823 </span>
+                        </div>
+                </button>
             </div>
             
             
@@ -189,20 +210,24 @@
 <script>
     function Abra1()
     {
-        $("#abrir1").animate({height:"60%"}, 1000);
+        $("#abrir1").animate({height:"55%"}, 1000);
         $("#abrir2").animate({height:"10%"}, 1000);
         $("#abrir3").animate({height:"10%"}, 1000);
-        $("#dados1").animate({height:"40%"}, 1000);
+        $("#dados1").animate({height:"70%"}, 1000);
         document.getElementById("dados1").style.display="flex"; 
-        document.getElementById("dados2").style.display="none"; 
+        document.getElementById("dados2").style.display="none";
+        document.getElementById("dados3").style.display="none";  
 
     }
     function Abra2()
     {
-        $("#abrir2").animate({height:"40%"}, 1000);
+        $("#abrir2").animate({height:"40%"}, 1400);
         $("#abrir1").animate({height:"10%"}, 1000);
         $("#abrir3").animate({height:"10%"}, 1000);
         $("#dados2").animate({height:"40%"}, 1000);
+        document.getElementById("dados1").style.display="none"; 
+        document.getElementById("dados2").style.display="flex";
+        document.getElementById("dados3").style.display="none";  
         
     }
     function Abra3()
@@ -210,6 +235,10 @@
         $("#abrir3").animate({height:"40%"}, 1000);
         $("#abrir2").animate({height:"10%"}, 1000);
         $("#abrir1").animate({height:"10%"}, 1000);
+        $("#dados3").animate({height:"40%"}, 1000);
+        document.getElementById("dados1").style.display="none"; 
+        document.getElementById("dados2").style.display="none";
+        document.getElementById("dados3").style.display="flex";  
     }
 </script>
 </html>
