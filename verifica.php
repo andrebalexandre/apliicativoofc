@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     $login = $_POST["login"]; //pega o input
     $senha = $_POST["senha"];
 echo($login);
@@ -27,13 +27,12 @@ echo($senha);
         {
             if($admin== "s")
         {
-            session_start();
+            
             $_SESSION["logado"] = $login;
-            header("Location: pedidospendentes_adm.php");
+           header("Location: pedidospendentes_adm.php");
         }
         else
         {
-            session_start();
             $_SESSION["logado"] = $login;
             header("Location: html/paginainicial.html");
         }
