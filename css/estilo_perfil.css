@@ -265,7 +265,7 @@ body
 .dados
 {
     width: 1200px;
-    height: 640px;
+    height: 670px;
     background-color: rgba(255, 255, 255, 0.692);
     margin-top:-660px;
     margin-left: 170px;
@@ -275,13 +275,15 @@ body
     width: 1100px;
     height: 440px;
     background-color: black;
-    margin-top:600px;
+    margin-top:640px;
     z-index: 1;
     position: absolute;
     margin-left:950px ;
+    flex-direction: row;
+    display: flex;
    
 }
-.nome
+.email
 {
     width: 700px;
     height: 60px;
@@ -289,5 +291,103 @@ body
     position: absolute;
     margin-left: 900px;
     margin-top: 0px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
     background-color: rgba(44, 119, 119, 0.895);
+}
+.bloco1
+{
+    background-color: blue;
+    width: 50%;
+    height: 440px;
+    overflow-y: scroll;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.bloco2
+{
+    background-color: brown;
+    width: 50%;
+    height: 440px;
+    overflow-y: scroll;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+.nome
+{
+   background-color: brown;
+   width: 80%;
+   height: 40px;
+}
+.cpf
+{
+   background-color: brown;
+   width: 80%;
+   height: 40px;
+}
+.telefone
+{
+   background-color: brown;
+   width: 80%;
+   height: 40px;
+}
+.aniversario
+{
+   background-color: brown;
+   width: 80%;
+   height: 40px;
+}
+.login
+{
+   background-color: brown;
+   width: 80%;
+   height: 40px;
+}
+.senha
+{
+   background-color: brown;
+   width: 80%;
+   height: 40px;
+}
+.cep
+{
+   background-color: blue;
+   width: 80%;
+   height: 40px;
+}
+.estado
+{
+   background-color: blue;
+   width: 80%;
+   height: 40px;
+}
+.cidade
+{
+   background-color: blue;
+   width: 80%;
+   height: 40px;
+}
+.bairro
+{
+   background-color: blue;
+   width: 80%;
+   height: 40px;
+}
+.numero
+{
+   background-color: blue;
+   width: 80%;
+   height: 40px;
+}
+.complemento
+{
+   background-color: blue;
+   width: 80%;
+   height: 40px;
 }

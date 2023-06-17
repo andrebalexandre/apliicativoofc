@@ -75,8 +75,35 @@
                 ?>
                 
             </div>
+            <div class="email">
+                <?php
+                echo("$logado");
+                ?>
+
+            </div>
+          <div class="dados2">
+          <div class="bloco1">
+            DADOS PESSOAIS
             <div class="nome"></div>
-          <div class="dados2"></div>
+            <div class="cpf"></div>
+            <div class="telefone"></div>
+            <div class="aniversario"></div>
+            <div class="login"></div>
+            <div class="senha"></div>
+            
+
+          </div>
+          <div class="bloco2">
+            DADOS DO ENDEREÇO
+            <div class="cep"></div>
+            <div class="estado"></div>
+            <div class="cidade"></div>
+            <div class="bairro"></div>
+            <div class="numero"></div>
+            <div class="complemento"></div>
+           
+          </div>
+          </div>
         </div>
      
 
@@ -87,4 +114,4 @@
     </div>   
 </body>
 </html>     
-              
+         
