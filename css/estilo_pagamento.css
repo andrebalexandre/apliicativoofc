@@ -590,7 +590,7 @@ a
     background-color:rgba(255, 255, 255, 0.742);
     height: 0px;
     width: 98%;
-    font-size: 15px;
+    font-size: 20px;
     display:none;
     align-content: center;
     align-items: center;
@@ -635,7 +635,55 @@ a
 .fildinho
 {
     width: 80%;
-    height: 20px;
+    height: 30px;
+    font-size: 12px;
+    display: flex;
+    border-style: solid;
+    border-color: transparent;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+    flex-direction: column;
+}
+.fildinho1
+{
+    margin-top: -10px;
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+    display: flex;
+    border-style: solid;
+    border-color: transparent;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+    flex-direction: column;
+}
+.fildinho2
+{
+    margin-top: 17px;
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+    display: flex;
+    border-style: solid;
+    border-color: transparent;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+    flex-direction: column;
+}
+.fildinho3
+{
+    margin-top: -10px;
+    width: 50px;
+    height: 30px;
     font-size: 12px;
     display: flex;
     border-style: solid;
@@ -655,6 +703,8 @@ a
     border-style: solid;
     border-radius: 5px;
     border-width: 1px;
+    text-align: center;
+    font-size: 15px;
 }
 .caixinha1
 {
@@ -664,12 +714,12 @@ a
     border-style: solid;
     border-radius: 5px;
     border-width: 1px;
+    text-align: center;
 }
 .repartir
 {
-    width: 80%;
-    height: 500px;
-    background-color: rgb(225, 59, 59);
+    width: 90%;
+    height: 55px;
     display:flex;
     align-content: center;
     align-items: center;
@@ -677,6 +727,10 @@ a
     justify-items: center; 
     flex-direction: row;
 }
-  
+.ladinho
+{
+    margin-left: 34px;
+
+}
  
 
