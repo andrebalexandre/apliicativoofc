@@ -281,7 +281,7 @@ body
 }
 .inteiro2
 {
-    /*background-color: white;*/
+    background-color: rgba(255, 255, 255, 0.719);
     border-color: black;
     border: 2px;
     border-style: solid;
@@ -318,6 +318,9 @@ body
     font-size: 15px;
     width: 200px;
     height: 70px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -333,6 +336,9 @@ body
     height: 70px;
     justify-content: center;
     justify-items: center;
+     border-style: solid;
+    border-color: black;
+    border-width: 2px;
     align-items: center;
     align-content: center;
    display: flex;
