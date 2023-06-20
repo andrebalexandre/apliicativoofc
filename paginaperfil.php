@@ -32,7 +32,7 @@
                 
             </div>
             <div class="D6">
-                <a href="../paginaperfil.php">
+                <a href="paginaperfil.php">
                 <img  title="Ver Perfil" src="img/perfil.png" width="70px" height="70px"> 
                 </a> 
                 
