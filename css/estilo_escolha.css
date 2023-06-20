@@ -1,6 +1,6 @@
 body
 {
-    font-family: "Audiowide", sans-serif;
+   
     background-image: url("../img/fundo4.jpg");
     overflow: hidden;
     margin: 0;
@@ -323,7 +323,7 @@ a
     border-color: rgb(25, 99, 99);
     width: 25%;
     height: 50vh;
-    margin-top: -15px;
+    margin-top: -155px;
     border-radius: 15px;
     justify-content: center;
     justify-items: center;
@@ -354,6 +354,7 @@ a
     background: rgba(245, 247, 248, 0.711);
     width:60%;
     height:65vh;
+    margin-top:-60px;
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -434,7 +435,7 @@ a
     border-radius: 20px;
     border-style: solid;
     border-color: rgb(21, 71, 64);
-    font-family: "Audiowide", sans-serif;
+   
     cursor: pointer;
 }
 .fieldcomidas
@@ -467,6 +468,19 @@ a
     align-content: center;
     align-items: center; 
     display: flex;
+}
+.seta1
+{
+    width: 52px;
+    margin-left:450px;
+  
+}
+.seta2
+{
+    width: 32px;
+    margin-left:-450px;
+    margin-top: -40px;
+  
 }
 .lembrete2
 {
