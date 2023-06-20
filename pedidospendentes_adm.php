@@ -18,11 +18,11 @@
 
             <a class="ME" href="pedidospendentes_adm.php"><b>USUÁRIOS</b></a>
                 
-            <a class="ME" href="ADM/pedidos.html"><b>PEDIDOS</b></a>
+            <a class="ME" href="ADM/pedidos.php"><b>PEDIDOS</b></a>
         
-            <a class="ME" href="ADM/precos.html"><b>PREÇOS</b></a>
+            <a class="ME" href="ADM/precos.php"><b>PRODUTOS</b></a>
             
-            <a class="ME" href="ADM/funcionarios.html"><b>FUNCIONÁRIOS</b></a>
+            <a class="ME" href="ADM/funcionarios.php"><b>FUNCIONÁRIOS</b></a>
     </div>
     <div class="prin">
         <div class="tabela">

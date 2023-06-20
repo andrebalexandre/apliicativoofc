@@ -16,14 +16,13 @@
     <form>
     <div class="menu">
 
-            
-        <a class="ME" href="../pedidospendentes_adm.php"><b>USUÁRIOS</b></a>
+            <a class="ME" href="../pedidospendentes_adm.php"><b>USUÁRIOS</b></a>
                 
-        <a class="ME" href="pedidos.html"><b>PEDIDOS</b></a>
+            <a class="ME" href="pedidos.php"><b>AVALIAÇÃO</b></a>
 
-        <a class="ME" href="precos.html"><b>PREÇOS</b></a>
-        
-        <a class="ME" href="funcionarios.html"><b>FUNCIONÁRIOS</b></a>
+            <a class="ME" href="precos.php"><b>PRODUTOS</b></a>
+
+            <a class="ME" href="funcionarios.php"><b>FUNCIONÁRIOS</b></a>
 
     </div>
     <div class="prin">
@@ -32,7 +31,7 @@
         <table class="tabelinha">
             <thead>
                 <tr>
-                    <th class="verde">EMAIL DO USUÁRIO</th>
-                    <th class="verde">PEDIDO DO USUÁRIO</th>
+                    <th class="verde">NOME DO FUNCIONÁRIO</th>
+                    <th class="verde">NIVEL DE PERMISSÃO</th>
                 </tr>
             </thead>
