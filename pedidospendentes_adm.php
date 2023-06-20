@@ -15,17 +15,14 @@
 <body>
     <form>
     <div class="menu">
+
+            <a class="ME" href="pedidospendentes_adm.php"><b>USUÁRIOS</b></a>
+                
+            <a class="ME" href="ADM/pedidos.html"><b>PEDIDOS</b></a>
         
-            <a class="ME" href="html/paginainicial.html"><b>USUÁRIOS</b></a>
-            <button class="ME">
-            <b>PEDIDOS</b>
-            </button>
-            <button class="ME">
-            <b>PREÇOS</b>
-            </button>
-            <button class="ME">
-            <b>FUNCIONÁRIOS</b>
-            </button>
+            <a class="ME" href="ADM/precos.html"><b>PREÇOS</b></a>
+            
+            <a class="ME" href="ADM/funcionarios.html"><b>FUNCIONÁRIOS</b></a>
     </div>
     <div class="prin">
         <div class="tabela">
@@ -57,7 +54,7 @@
                         <td class='verde'>$nome</td>
                         <td class='verde'>$cpf</td>
                         <td class='verde'>$telefone</td>
-                        <td class='verde'><button><b>EXCLUIR</b></button></td>
+                        <td class='verde'><button onclick=\"excluir('$email');\"><b>EXCLUIR</b></button></td>
                         </tr>
                     ");
                 }
@@ -70,4 +67,11 @@
 </form>
     
 </body>
+<script>
+    function excluir(email)
+    {
+     
+        window.open("excluir.php?email="+email,"_blank");
+    }
+</script>
 </html>
