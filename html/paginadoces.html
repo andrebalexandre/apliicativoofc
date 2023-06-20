@@ -185,20 +185,26 @@
         carrossel.classList.add("teste2")
 
     }
+    clicks=0
     function adicionar(produto)
     {
-        if(document.getElementById(produto).style.borderColor!="green")
+        clicks=clicks+1
+        if(clicks==1)
         {
-            document.getElementById(produto).style.borderStyle = "solid"
-            document.getElementById(produto).style.borderColor="green"
-        }
-        else
-        {
-            document.getElementById(produto).style.borderStyle = "none"
-            document.getElementById(produto).style.borderColor="red"
-        }
-        
 
+        
+            if(document.getElementById(produto).style.borderColor!="green")
+            {
+                document.getElementById(produto).style.borderStyle = "solid"
+                document.getElementById(produto).style.borderColor="green"
+            }
+            else
+            {
+                document.getElementById(produto).style.borderStyle = "none"
+                document.getElementById(produto).style.borderColor="red"
+            }
+        
+        }
         
 
         
