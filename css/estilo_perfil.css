@@ -301,6 +301,7 @@ body
     align-items: center;
     padding-left: 20px;
     background-color: rgba(44, 119, 119, 0.895);
+    border-radius:5px ;
 }
 .bloco1
 {
@@ -335,8 +336,13 @@ body
    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
-   justify-items: center;
    display: flex;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 
 }
 .cpf
@@ -344,6 +350,12 @@ body
     background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
    
 }
 .telefone
@@ -351,57 +363,117 @@ body
     background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 }
 .aniversario
 {
     background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 }
 .login
 {
     background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 }
 .senha
 { background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 }
 .cep
 {
     background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 }
 .estado
 {
     background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 }
 .cidade
 {
     background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 }
 .bairro
 {
     background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 }
 .numero
 {
     background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 }
 .complemento
 {
     background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   border-radius:5px ;
+   justify-items: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding-left: 5px;
 }
