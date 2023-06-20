@@ -19,7 +19,7 @@ body
 }
 .ME
 {
- font-size: 15px;
+ font-size: 20px;
  border: none;
  background-color: transparent;
  color: white;
@@ -82,7 +82,8 @@ table, th, td
 {
     border: 1px solid;
 }
-.excluir
+a
 {
-
+    
+    color: white;
 }
