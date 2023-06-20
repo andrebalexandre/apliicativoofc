@@ -421,7 +421,7 @@ a
     width: 200px;
     z-index: 10;
     left:70px;
-    color: rgb(50, 102, 94);
+    color:rgba(0, 0, 0, 0.726);
     position: absolute;
 
 }
@@ -430,7 +430,7 @@ a
     font-family: 'Dancing Script', cursive; 
     position: absolute;
     top: 120px;
-    left:470px; 
+    left:70px; 
     z-index: 10;
     font-size: 100px;
 

@@ -423,7 +423,7 @@ a
     width: 300px;
     z-index: 250;
     left:70px;
-    color: rgb(50, 102, 94);
+    color: rgba(0, 0, 0, 0.726);
     position: absolute;
 
 }

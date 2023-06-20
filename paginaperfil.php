@@ -69,9 +69,34 @@
             <div class="letraperfil">
                 <?php
                     session_start();
+                    include ("conecta.php");
                     $logado = $_SESSION["logado"];
                     $letra = substr($logado, 0, 1);
                     echo($letra);
+
+                    $comando = $pdo->prepare("SELECT * FROM cadastro where email='$logado'");
+                    $resultado = $comando->execute();
+            
+                    while( $linhas = $comando->fetch()){
+                        $nome = $linhas["nome"];
+                        $cpf = $linhas["cpf"];
+                        $telefone = $linhas["telefone"];
+                        $aniversario = $linhas["aniversario"];
+                        $email = $linhas["email"];
+                        $senha = $linhas["senha"];
+                        $cep = $linhas["cep"];
+                        $estado = $linhas["estado"];
+                        $cidade = $linhas["cidade"];
+                        $bairro= $linhas["bairro"];
+                        $numero = $linhas["numero"];
+                        $complemento = $linhas["complemento"];
+
+
+                    }
+
+
+
+
                 ?>
                 
             </div>
@@ -83,24 +108,73 @@
             </div>
           <div class="dados2">
           <div class="bloco1">
-            DADOS PESSOAIS
-            <div class="nome"></div>
-            <div class="cpf"></div>
-            <div class="telefone"></div>
-            <div class="aniversario"></div>
-            <div class="login"></div>
-            <div class="senha"></div>
+         
+
+          <div class="nome">NOME:
+          <?php
+                echo("$nome");
+                ?>
+          </div>
+            <div class="cpf">CPF:
+            <?php
+                echo("$cpf");
+                ?>
+            </div>
+            <div class="telefone">TELEFONE:
+            <?php
+                echo("$telefone");
+                ?>
+            </div>
+            <div class="aniversario">NASCIMENTO:
+            <?php
+                echo("$aniversario");
+                ?>
+            </div>
+            <div class="login">EMAIL:
+            <?php
+                echo("$email");
+                ?>
+            </div>
+            <div class="senha">SENHA:
+            <?php
+                echo("$senha");
+                ?>
+            </div>
             
 
           </div>
           <div class="bloco2">
-            DADOS DO ENDEREÇO
-            <div class="cep"></div>
-            <div class="estado"></div>
-            <div class="cidade"></div>
-            <div class="bairro"></div>
-            <div class="numero"></div>
-            <div class="complemento"></div>
+            
+            <div class="cep">CEP:
+            <?php
+                echo("$cep");
+                ?>
+            </div>
+            <div class="estado">ESTADO:
+            <?php
+                echo("$estado");
+                ?>
+            </div>
+            <div class="cidade">CIDADE:
+            <?php
+                echo("$cidade");
+                ?>
+            </div>
+            <div class="bairro">BAIRRO:
+            <?php
+                echo("$bairro");
+                ?>
+            </div>
+            <div class="numero">NÚMERO:
+            <?php
+                echo("$numero");
+                ?>
+            </div>
+            <div class="complemento">COMPLEMENTO:
+            <?php
+                echo("$complemento");
+                ?>
+            </div>
            
           </div>
           </div>

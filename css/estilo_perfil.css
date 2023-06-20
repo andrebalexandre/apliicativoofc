@@ -1,7 +1,7 @@
 body
 {
     
-    font-family: "Audiowide", sans-serif;
+    
     background-image: url("../img/fundo4.jpg");
     overflow: hidden;
     margin: 0;
@@ -264,23 +264,27 @@ body
 }
 .dados
 {
-    width: 1200px;
+    width: 1450px;
     height: 670px;
-    background-color: rgba(255, 255, 255, 0.692);
-    margin-top:-660px;
-    margin-left: 170px;
+   /* background-color: rgba(255, 255, 255, 0.692);*/
+    margin-top:-670px;
+    margin-left: 70px;
+    padding-left: 20px;
+    font-size: 20px;
+
 }
 .dados2
 {
-    width: 1100px;
+    width: 1300px;
     height: 440px;
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.692);
     margin-top:640px;
     z-index: 1;
     position: absolute;
-    margin-left:950px ;
+    margin-left:1250px ;
     flex-direction: row;
     display: flex;
+    padding-left: -20px;
    
 }
 .email
@@ -291,7 +295,7 @@ body
     position: absolute;
     margin-left: 900px;
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     display: flex;
     align-items: center;
@@ -300,94 +304,104 @@ body
 }
 .bloco1
 {
-    background-color: blue;
+   /* background-color: blue;*/
     width: 50%;
     height: 440px;
     overflow-y: scroll;
     flex-direction: column;
     display: flex;
     justify-content: space-around;
+    COLOR:white;
+    padding-left: 20PX;
+   
     
 }
+
 .bloco2
 {
-    background-color: brown;
+    /*background-color: brown;*/
     width: 50%;
     height: 440px;
     overflow-y: scroll;
     flex-direction: column;
     justify-content: space-around;
     display: flex;
+    padding-left: 40PX;
+   COLOR:white
 }
+
 .nome
 {
-   background-color: brown;
+   background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   justify-items: center;
+   display: flex;
+
 }
 .cpf
 {
-   background-color: brown;
+    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
+   
 }
 .telefone
 {
-   background-color: brown;
+    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
 }
 .aniversario
 {
-   background-color: brown;
+    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
 }
 .login
 {
-   background-color: brown;
+    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
 }
 .senha
-{
-   background-color: brown;
+{ background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
 }
 .cep
 {
-   background-color: blue;
+    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
 }
 .estado
 {
-   background-color: blue;
+    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
 }
 .cidade
 {
-   background-color: blue;
+    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
 }
 .bairro
 {
-   background-color: blue;
+    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
 }
 .numero
 {
-   background-color: blue;
+    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
 }
 .complemento
 {
-   background-color: blue;
+    background-coloR:rgb(44, 119, 119);
    width: 80%;
    height: 40px;
 }
