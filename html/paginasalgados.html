@@ -152,7 +152,7 @@
                    
                    
                 <div class="botãoescolha">
-                    <a href="../paginaescolha.php" class="btn btn-white btn-        animate">Personalizar pedido</a>
+                    <a href="#" onclick="abrir('../paginaescolha.php');" class="btn btn-white btn-        animate">Personalizar pedido</a>
                 </div>
                 </div>
 
@@ -176,9 +176,11 @@
 
     }
     clicks=0
+    adicionado=""
     function adicionar(produto)
     {
         clicks=clicks+1
+        adicionado=produto
         if(clicks==1)
         {
 
@@ -199,6 +201,10 @@
 
         
         
+    }
+    function abrir(arquivo)
+    {
+        window.open(arquivo+"?adicionado=" +adicionado)
     }
 </script>
 </html>

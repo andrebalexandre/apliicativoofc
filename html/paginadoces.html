@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 <html lang="pt-br">
@@ -107,7 +108,7 @@
                     </div> 
 
                     <div class="img_legenda" id="chocolate quente">
-                        <img onclick="adicionar('chocolate quente');" src="../img/Chocolate Quente 002.jpg" width="250px" height="320px" >
+                        <img onclick="adicionar('chocolate quente');" src="../img/Chocolate Quente 002.jpg" width="250px" height="300px" >
                         <div class="preco">
                             <b>CHOCOLATE QUENTE</b>
                             <b>R$9,00</b>
@@ -163,7 +164,7 @@
                    
                    
                     <div class="botãoescolha">
-                        <a href="..paginaescolha.php" class="btn btn-white btn-        animate">Personalizar pedido</a>
+                        <a href="#" onclick="abrir('../paginaescolha.php');"class="btn btn-white btn-        animate">Personalizar pedido</a>
                     </div>
                     </div>
 
@@ -186,9 +187,11 @@
 
     }
     clicks=0
+    adicionado=""
     function adicionar(produto)
     {
         clicks=clicks+1
+        adicionado=produto
         if(clicks==1)
         {
 
@@ -203,14 +206,16 @@
                 document.getElementById(produto).style.borderStyle = "none"
                 document.getElementById(produto).style.borderColor="red"
             }
-        
+            
+
         }
-        
 
         
-       
         
     }
-    
+    function abrir(arquivo)
+    {
+        window.open(arquivo+"?adicionado=" +adicionado)
+    }
 </script>
 </html>

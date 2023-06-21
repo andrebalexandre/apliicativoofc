@@ -1,3 +1,79 @@
+<?php
+$adicionado=$_GET["adicionado"];
+if($adicionado=="empadinha")
+{
+    $imagem = "img/empadinha2.jpg";
+}
+if($adicionado=="pastel de frango")
+{
+    $imagem = "img/pastel.jpg";
+}
+if($adicionado=="pão de forma")
+{
+    $imagem = "img/pão caseiro.jpg";
+}
+if($adicionado=="misto quente")
+{
+    $imagem = "img/misto quente2.jpg";
+}
+if($adicionado=="mini coxinhas")
+{
+    $imagem = "img/imgcoxinha.png";
+}
+if($adicionado=="pão de queijo")
+{
+    $imagem = "img/PÃO DE QUEIJO 02.JPG";
+}
+if($adicionado=="mini pizza")
+{
+    $imagem = "img/minipizza.jpg";
+}
+if($adicionado=="bolo_chocolate")
+{
+    $imagem = "img/bolodechocolate.png";
+}
+if($adicionado=="sonho recheado")
+{
+    $imagem = "img/sonho recheado02.jpg";
+}
+if($adicionado=="chocolate quente")
+{
+    $imagem = "img/Chocolate Quente 002.jpg";
+}
+
+if($adicionado=="cookie")
+{
+    $imagem = "img/cookie002.jpg";
+}
+
+if($adicionado=="torta de morango")
+{
+    $imagem = "img/tortademorango.jpg";
+}
+
+if($adicionado=="brownie")
+{
+    $imagem = "img/brownie.jpg";
+}
+if($adicionado=="torta de framboesa")
+{
+    $imagem = "img/tortamorango.png";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 <html lang="pt-br">
@@ -70,15 +146,11 @@
         
             <div class="produtosverde">
                
-                <img class="coxinha" src="img/lupacoxinha3.png" width="200px">
+                <img class="bordinha" src="<?php echo($imagem);  ?>" width="200px">
                     <div class="produtosverde2">
-                        <img src="img/coxinhacortada.png" class="bordinha" width="30%" height="90vh">
-                        <img src="img/lupacoxinha3.png" class="bordinha" width="30%" height="100vh">
-                   
+                        
                     </div>
-                    
-                    <img class="seta1" src="img/seta2.png">
-                    <img class="seta2" src="img/seta002.png">
+                   
             </div>
             <div class="produtosvermelho">
                         <fieldset class="fieldcomidas">

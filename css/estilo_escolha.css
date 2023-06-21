@@ -345,9 +345,11 @@ a
 }
 .bordinha
 {
-    border-color: rgba(223, 227, 227, 0.801);
+    border-color: rgba(34, 138, 138, 0.448);
     border-style: solid;
     border-radius: 20px;
+    margin-top:60px;
+    width: 300px;
 }
 .produtosvermelho
 {
