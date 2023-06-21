@@ -1,4 +1,8 @@
 <?php
+//pesquisar o id na tabela precos, usando a variavel $adicionado//
+
+$codigo=
+
 $adicionado=$_GET["adicionado"];
 if($adicionado=="empadinha")
 {
@@ -181,7 +185,7 @@ if($adicionado=="torta de framboesa")
                                 <fieldset class="obs">
                                     <input class="obss" type="text">
                                 </fieldset>
-                                <a href="html/paginacarrinho.html">
+                                <a href="#" onclick="salvar('<?php echo($codigo);  ?>');">
                                 <button class="ok"><b>ADICIONAR AO CARRINHO</b></button></a> 
                                 
                             </div>
